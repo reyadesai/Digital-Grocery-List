@@ -18,8 +18,11 @@
 ## Project Description
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
+>  * A: It allows us to learn more and apply our knowledge of search functions through a database through algorithms and data storage methods.
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
+>  * A: C++, UI design, inheritance, polymorphism, search algorithms, data structures
  > * What will be the input/output of your project?
+>  * A: User decisions: Browse and Search through the catalog, add from catalog to basket, remove from the basket, check basket, checkout basket
  > * What are the features that the project provides?
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
