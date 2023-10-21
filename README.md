@@ -19,11 +19,14 @@
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
 >  * A: It allows us to learn more and apply our knowledge of search functions through a database through algorithms and data storage methods.
+>  * The project in general is important because it will teach us skills that are necessary in the real-world, one major skill being collaboration. We will learn how to effectively work with a larger group of people and to manage our time to get work done. We will also learn how to work on larger projects, which will be different from our typical labs/programming assignments we have been assigned. Lastly, we chose to do a grocery list because it is something used everyday by a large population. Learning to create something so practical is something that grabbed our interest. 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
->  * A: C++, UI design, inheritance, polymorphism, search algorithms, data structures
+>  * A: C++, UI design, inheritance, polymorphism, search algorithms, data structures, VS Code
  > * What will be the input/output of your project?
->  * A: User decisions: Browse and Search through the catalog, add from catalog to basket, remove from the basket, check basket, checkout basket
+>  * The user will be first be prompted to mention the store they are creating the list for. Then they will be asked to add an item to their grocery list, including the name quantity, category, and importance, which will then be displayed onto the screen. Upon completion of the list, they will be able to view their entire cart. 
+>  * A: User decisions: Browse and Search through the catalog, add from catalog to basket, remove from the basket, check basket, checkout basket, changing quantity of an item, category it falls into and prioritizing item.
  > * What are the features that the project provides?
+>  * The grocery list offers several features for the user. The user will be able to create different lists for each store they go to, where they can add/remove items as they please, as well as changing the quantity of items they may want several of. They will also be able to sort their items in different categories such as Dairy, Fruits, Vegetables, etc. and sort those by priority. Upon completing their list, the user will be able to view the whole list, outputting all the items, including their quantity, category, and priority. 
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted. 
  > 
  > You also need to set up an empty project board using GitHub projects (board view). Make sure you add the board under your project repository. You should also have a Product Backlog and In testing columns added.
