@@ -19,7 +19,7 @@
  > Your project description should summarize the project you are proposing. Be sure to include:
  > * Why is it important or interesting to you?
 >  * A: It allows us to learn more and apply our knowledge of search functions through a database through algorithms and data storage methods.
->  * The project in general is important because it will teach us skills that are necessary in the real-world, one major skill being collaboration. We will learn how to effectively work with a larger group of people and to manage our time to get work done. We will also learn how to work on larger projects, which will be different from our typical labs/programming assignments we have been assigned. Lastly, we chose to do a grocery list because it is something used everyday by a large population. Learning to create something so practical is something that grabbed our interest. 
+>  * The project in general is important because it will teach us skills that are necessary in the real-world, one major skill being collaboration. We will learn how to effectively work with a larger group of people and to manage our time to get work done. We will also learn how to work on larger projects, which will be different from our typical labs/programming assignments we have been assigned. Lastly, we chose to do a grocery list because it is something used everyday by a large population. Learning to create something so practical is what  grabbed our interest. 
  > * What languages/tools/technologies do you plan to use? (This list may change over the course of the project)
 >  * A: C++, UI design, inheritance, polymorphism, search algorithms, data structures, VS Code
  > * What will be the input/output of your project?
