@@ -28,7 +28,7 @@
  > * What are the features that the project provides?
 >  * The grocery list offers several features for the user. The user will be able to create different lists for each store they go to, where they can add/remove items as they please, as well as changing the quantity of items they may want several of. They will also be able to sort their items in different categories such as Dairy, Fruits, Vegetables, etc. and sort those by priority. Upon completing their list, the user will be able to view the whole list, outputting all the items, including their quantity, category, and priority. 
  > This description should be in enough detail that the TA/instructor can determine the complexity of the project and if it is sufficient for the team members to complete in the time allotted.
- > * The grobery list will also have a feature in which the user can save past lists. We will probably utilize a data structure such as an array or vector to store these old lists so a user can access them whenever they want.
+ > * The grocery list will also have a feature in which the user can save past lists. We will probably utilize a data structure such as an array or vector to store these old lists so a user can access them whenever they want.
 We will also use a shopping cart feature that allows users to add items from the grocery list. The shopping cart can also hold information about item quantities and prices. We will specifically implement features to add, remove, and view items in the cart. We are also going to need to implement validation checks to make sure that users provide valid input, such as valid item names, quantities, and prices.
 Our program should be able to handle errors and provide user-friendly error messages.
 
