@@ -21,7 +21,7 @@ We will also use a shopping cart feature that allows users to add items from the
  >     * The tasks you are planning for the first sprint
  >     * How work will be divided between the team members
 ## User Interface Specification
- > Include a navigation diagram for your screens and the layout of each of those screens as desribed below. For all the layouts/diagrams, you can use any tool such as PowerPoint or a drawing program. (Specification requirement is adapted from [this template](https://redirect.cs.umbc.edu/~mgrass2/cmsc345/Template_UI.doc))
+
 
 ### Navigation Diagram
 
@@ -30,7 +30,11 @@ We will also use a shopping cart feature that allows users to add items from the
 The Navigation Diagram shows how the user can navigate through the list. First, the user will be asked to choose a profile, along with showing allergies/coupons associated with that specific user. Then, they can choose from a list of stores they have to access an older list or create a new one. After the user edits/creates their list, they will view the total list at checkout, including the prices, location of items in store, and quantities. Lastly, the user can exit. 
 
 ### Screen Layouts
-> Include the layout of each of your screens. The layout should describe the screen’s major components such as menus and prompts for user inputs, expected output, and buttons (if applicable). Explain what is on the layout, and the purpose of each menu item, button, etc. If many screens share the same layout, start by describing the general layout and then list the screens that will be using that layout and the differences between each of them.
+
+<img width="840" alt="Screenshot 2023-11-05 at 10 12 55 PM" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/ce2d086a-b07c-481d-9a1e-b82eb9a09c33">
+
+The user will first be brought to the screen to choose their profile. Upon choosing, they will see their allergens and coupons associated with their profile, which they could edit if they wish. If they choose to edit either one, they will be brought to a screen that allows them to modify their entries for both coupons and allergens. When done, the user will be prompted to choose a store they want to make a list for, where they can choose to make a new list, or choose an older saved list, which they can also edit. When done, they will see a page that shows their whole list, including the prices of items with their locations and type of item. The user will have the option to save their list, or exit the page, and then will be shown a page stating "LIST COMPLETE"  
+
 
 ## Class Diagram
  <img width="686" alt="PNG image" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/5d35cf0c-9cd0-4d3e-a43a-e67984c739a5">
