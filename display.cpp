@@ -49,22 +49,147 @@ void Display::editCoupons() {
 }
 
 void Display::chooseStore() {
-    // Choose a store for shopping
-    showAvailableStores();
-    selectStore();
+    int choice;
+    do {
+        cout << "Choose a Store:" << endl;
+        cout << "1. Store1" << endl;
+        cout << "2. Store2" << endl;
+        cout << "3. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            selectedStore = "Store1";
+            cout << "Store1 selected." << endl;
+        } else if (choice == 2) {
+            selectedStore = "Store2";
+            cout << "Store2 selected." << endl;
+        } else if (choice != 3) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 3);
 }
 
 void Display::createList() {
-    // Create a new shopping list
-    currentShoppingList = ShoppingList(); // Start with an empty shopping list
-    addToShoppingList();
+    int choice;
+    currentShoppingList = ShoppingList(); // Initialize an empty shopping list
+
+    do {
+        cout << "Create a New Shopping List:" << endl;
+        cout << "1. Add an item to the list" << endl;
+        cout << "2. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            string itemName;
+            int quantity;
+            double price;
+
+            cout << "Enter item name: ";
+            cin >> itemName;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            cout << "Enter price: ";
+            cin >> price;
+
+            currentShoppingList.addItem(itemName, quantity, price);
+            cout << "Item added to the list." << endl;
+        } else if (choice != 2) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 2);
 }
 
+void Display::createList() {
+    int choice;
+    currentShoppingList = ShoppingList(); // Initialize an empty shopping list
+
+    do {
+        cout << "Create a New Shopping List:" << endl;
+        cout << "1. Add an item to the list" << endl;
+        cout << "2. Back to the main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            string itemName;
+            int quantity;
+            double price;
+
+            cout << "Enter item name: ";
+            cin >> itemName;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            cout << "Enter price: ";
+            cin >> price;
+
+            currentShoppingList.addItem(itemName, quantity, price);
+            cout << "Item added to the list." << endl;
+        } else if (choice != 2) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 2);
+}
+
+
 void Display::editList() {
-    // Edit the saved shopping list
-    showSavedLists();
-    selectShoppingList();
-    editShoppingList();
+    int choice;
+    do {
+        cout << "Edit the Shopping List:" << endl;
+        cout << "1. Add an item to the list" << endl;
+        cout << "2. Edit an item in the list" << endl;
+        cout << "3. Remove an item from the list" << endl;
+        cout << "4. Back to the main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            // Allow the user to add items to the list
+            string itemName;
+            int quantity;
+            double price;
+
+            cout << "Enter item name: ";
+            cin >> itemName;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            cout << "Enter price: ";
+            cin >> price;
+
+            currentShoppingList.addItem(itemName, quantity, price);
+            cout << "Item added to the list." << endl;
+        } else if (choice == 2) {
+            // Allow the user to edit an existing item in the list
+            string itemName;
+            int newQuantity;
+
+            cout << "Enter item name to edit: ";
+            cin >> itemName;
+            cout << "Enter new quantity: ";
+            cin >> newQuantity;
+
+            if (currentShoppingList.editItem(itemName, newQuantity)) {
+                cout << "Item updated successfully." << endl;
+            } else {
+                cout << "Item not found in the list." << endl;
+            }
+        } else if (choice == 3) {
+            // Allow the user to remove an item from the list
+            string itemName;
+
+            cout << "Enter item name to remove: ";
+            cin >> itemName;
+
+            if (currentShoppingList.removeItem(itemName)) {
+                cout << "Item removed from the list." << endl;
+            } else {
+                cout << "Item not found in the list." << endl;
+            }
+        } else if (choice != 4) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 4);
 }
 
 void Display::showList() {
@@ -90,16 +215,52 @@ void Display::showProfileData() {
 }
 
 void Display::editProfileData() {
-    for (string& profile : userProfiles) {
-        // Prompt the user for the updated profile information
-        cout << "Edit Profile: " << profile << endl;
-        string updatedProfile;
-        cout << "Enter the updated profile information: ";
-        cin >> updatedProfile;
-        
-        // Update the profile with the new information
-        profile = updatedProfile;
-    }
+    
+    int choice;
+    do {
+        cout << "Edit Profile Data:" << endl;
+        cout << "1. Add a new profile" << endl;
+        cout << "2. Edit existing profile" << endl;
+        cout << "3. Remove a profile" << endl;
+        cout << "4. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            string newProfile;
+            cout << "Enter the new profile: ";
+            cin >> newProfile;
+            userProfiles.push_back(newProfile);
+            cout << "Profile added successfully." << endl;
+        } else if (choice == 2) {
+            string profileName;
+            cout << "Enter the profile to edit: ";
+            cin >> profileName;
+            auto it = find(userProfiles.begin(), userProfiles.end(), profileName);
+            if (it != userProfiles.end()) {
+                string updatedProfile;
+                cout << "Enter the updated profile information: ";
+                cin >> updatedProfile;
+                *it = updatedProfile;
+                cout << "Profile updated successfully." << endl;
+            } else {
+                cout << "Profile not found." << endl;
+            }
+        } else if (choice == 3) {
+            string profileName;
+            cout << "Enter the profile to remove: ";
+            cin >> profileName;
+            auto it = find(userProfiles.begin(), userProfiles.end(), profileName);
+            if (it != userProfiles.end()) {
+                userProfiles.erase(it);
+                cout << "Profile removed successfully." << endl;
+            } else {
+                cout << "Profile not found." << endl;
+            }
+        } else if (choice != 4) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 4);
 }
 
 void Display::showAllergensData() {
@@ -154,29 +315,108 @@ void Display::selectStore() {
 }
 
 void Display::addToShoppingList() {
-    // Allow the user to add items to the shopping list
-    currentShoppingList.addItem("Item1", 5, 2.99);
-    currentShoppingList.addItem("Item2", 3, 1.49);
+
+    int choice;
+    do {
+        cout << "Add an Item to the Shopping List:" << endl;
+        cout << "1. Add an item to the list" << endl;
+        cout << "2. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            string itemName;
+            int quantity;
+            double price;
+
+            cout << "Enter item name: ";
+            cin >> itemName;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            cout << "Enter price: ";
+            cin >> price;
+
+            currentShoppingList.addItem(itemName, quantity, price);
+            cout << "Item added to the list." << endl;
+        } else if (choice != 2) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 2);
 }
 
 void Display::showSavedLists() {
     // Show saved shopping lists
+    //we need to work on this
     cout << "Saved Shopping Lists: List1, List2" << endl;
 }
 
 void Display::selectShoppingList() {
     // Allow the user to select a saved shopping list
+    //need to work on this 
     cout << "Selected Shopping List: List1" << endl;
 }
 
 void Display::editShoppingList() {
-    // Allow the user to edit the selected shopping list
-    currentShoppingList.editItem("Item1", 4);
-    currentShoppingList.removeItem("Item2");
+   int choice;
+    do {
+        cout << "Edit the Shopping List:" << endl;
+        cout << "1. Add an item to the list" << endl;
+        cout << "2. Edit an item in the list" << endl;
+        cout << "3. Remove an item from the list" << endl;
+        cout << "4. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            // Allow the user to add items to the list
+            string itemName;
+            int quantity;
+            double price;
+
+            cout << "Enter item name: ";
+            cin >> itemName;
+            cout << "Enter quantity: ";
+            cin >> quantity;
+            cout << "Enter price: ";
+            cin >> price;
+
+            currentShoppingList.addItem(itemName, quantity, price);
+            cout << "Item added to the list." << endl;
+        } else if (choice == 2) {
+            // Allow the user to edit an existing item in the list
+            string itemName;
+            int newQuantity;
+
+            cout << "Enter item name to edit: ";
+            cin >> itemName;
+            cout << "Enter new quantity: ";
+            cin >> newQuantity;
+
+            if (currentShoppingList.editItem(itemName, newQuantity)) {
+                cout << "Item updated successfully." << endl;
+            } else {
+                cout << "Item not found in the list." << endl;
+            }
+        } else if (choice == 3) {
+            // Allow the user to remove an item from the list
+            string itemName;
+
+            cout << "Enter item name to remove: ";
+            cin >> itemName;
+
+            if (currentShoppingList.removeItem(itemName)) {
+                cout << "Item removed from the list." << endl;
+            } else {
+                cout << "Item not found in the list." << endl;
+            }
+        } else if (choice != 4) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 4);
 }
 
 void Display::displayShoppingList() {
-    // Display the items in the shopping list
+    cout << "Shopping List:" << endl;
     currentShoppingList.displayItems();
 }
 
@@ -187,7 +427,15 @@ void Display::calculateTotalPrice() {
 }
 
 void Display::saveShoppingList() {
-    // Save the current shopping list to a file, database, etc.
-    // Implement the logic to save the list
-    // currentShoppingList.saveToFile("shopping_list.txt");
+    // Implement the logic to save the list to a file
+    ofstream outFile("shopping_list.txt");
+
+    if (outFile.is_open()) {
+        currentShoppingList.saveToFile(outFile);
+        outFile.close();
+        cout << "Shopping list saved successfully." << endl;
+    } else {
+        cout << "Error: Unable to save the shopping list." << endl;
+    }
 }
+
