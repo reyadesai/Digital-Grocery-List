@@ -4,14 +4,17 @@
 #include <string>
 
 class Allergen {
-private:
-    std::string name;
-
 public:
     Allergen(const std::string& name);
 
-    // Getter for the allergen name
+    // Getter for allergen name
     std::string getName() const;
+
+    // Setter for allergen name
+    void setName(const std::string& name);
+
+private:
+    std::string name;
 };
 
-#endif  // ALLERGEN_H
+#endif

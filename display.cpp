@@ -1,5 +1,5 @@
 #include "display.h"
-
+#include "allergen.h" 
 Display::Display() {
     // Initialize user data, available stores, etc.
     userProfiles = {"User1", "User2"};
@@ -29,13 +29,53 @@ void Display::editProfile() {
 }
 
 void Display::showAllergens() {
-    // Display user's allergens
-    showAllergensData();
+    // Display user's allergen preferences
+    cout << "Allergens: ";
+    for (const Allergen& allergen : userAllergens) {
+        cout << allergen.getName() << ", ";
+    }
+    cout << endl;
 }
 
 void Display::editAllergens() {
-    // Edit user's allergens
-    editAllergensData();
+   int choice;
+    do {
+        cout << "Edit Allergens:" << endl;
+        cout << "1. Add a new allergen" << endl;
+        cout << "2. Remove an allergen" << endl;
+        cout << "3. Back to main menu" << endl;
+        cout << "Enter your choice: ";
+        cin >> choice;
+
+        if (choice == 1) {
+            string newAllergenName;
+            cout << "Enter the new allergen: ";
+            cin >> newAllergenName;
+            userAllergens.push_back(Allergen(newAllergenName));
+            cout << "Allergen added successfully." << endl;
+        } else if (choice == 2) {
+            if (!userAllergens.empty()) {
+                int allergenChoice;
+                cout << "Select an allergen to remove:" << endl;
+                for (size_t i = 0; i < userAllergens.size(); ++i) {
+                    cout << i + 1 << ". " << userAllergens[i].getName() << endl;
+                }
+                cout << "Enter the number of the allergen to remove: ";
+                cin >> allergenChoice;
+
+                if (allergenChoice >= 1 && allergenChoice <= static_cast<int>(userAllergens.size())) {
+                    userAllergens.erase(userAllergens.begin() + allergenChoice - 1);
+                    cout << "Allergen removed successfully." << endl;
+                } else {
+                    cout << "Invalid allergen choice. Please try again." << endl;
+                }
+            } else {
+                cout << "No allergens to remove." << endl;
+            }
+        } else if (choice != 3) {
+            cout << "Invalid choice. Please try again." << endl;
+        }
+    } while (choice != 3);
 }
 
 void Display::showCoupons() {
