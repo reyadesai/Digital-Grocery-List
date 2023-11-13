@@ -12,10 +12,12 @@ class Food {
         int id;
         //quantity
         int qty;
+        int price;
+
 
     public: 
         //constructs each individual food item, all stay the same except quantity
-        Food(const string , const string , const int , int );
+        Food(const string , const string , const int , int , const double);
 
         Food();
         
@@ -29,6 +31,8 @@ class Food {
         int getID() const;
         //return QTY
         int getQTY() const;
+        //return price
+        double getPrice() const;
         //changes QTY formula: qty = qty - change
         //need to add safeguards: can't input negative value
         void reduceQTY(int change);

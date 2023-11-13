@@ -5,11 +5,12 @@
 using namespace std;
 
 //constructor
-Food::Food(const string name_, const string type_, const int id_, int quantity_) {
+Food::Food(const string name_, const string type_, const int id_, int quantity_, const double price_) {
     this->name = name_;
     this->type = type_;
     this->id = id_;
     this->qty = quantity_;
+    this->price = price_;
 }
 
 Food::Food() {
@@ -44,6 +45,11 @@ int Food::getID() const {
 int Food::getQTY() const {
     //cout << "work on getQTY" << endl;
     return qty;
+}
+
+//return price
+double Food::getPrice() const {
+    return price;
 }
 
 //changes QTY formula: qty = qty - change

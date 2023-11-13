@@ -11,7 +11,7 @@ int main () {
 
     for(int i = 0; i < 32; i++) {
 
-        cout << testBase[i].getName() << " : " << testBase[i].getType() << " : " << testBase[i].getID() << " : " << testBase[i].getQTY() << endl;
+        cout << testBase[i].getName() << " : " << testBase[i].getType() << " : " << testBase[i].getID() << " : " << testBase[i].getQTY() << " : " << testBase[i].getPrice() << endl;
 
 
     }
