@@ -1,55 +1,62 @@
-// display.h
 #ifndef DISPLAY_H
 #define DISPLAY_H
 
 #include <iostream>
+#include <string>
 #include <vector>
-#include "food.h"
-
+#include "shoppingList.h"
+#include "coupon.h"
+#include "allergen.h"
+#include "userProfile.h"
 class Display {
 public:
     Display();
     ~Display();
 
-    void showProfile(); // Show user's profile
-    void editProfile(); // Edit user's profile
-    void showAllergens(); // Show user's allergens
-    void editAllergens(); // Edit user's allergens
-    void showCoupons(); // Show user's coupons
-    void editCoupons(); // Edit user's coupons
-    void chooseStore(); // Choose a store for shopping
-    void createList(); // Create a new shopping list
-    void editList(); // Edit the saved shopping list
-    void showList(); // Display the shopping list
-    void saveList(); // Save the shopping list
-    void exit(); // Exit the display
+    void showProfile();
+    void editProfile();
+    void showAllergens();
+    void editAllergens();
+    void showCoupons();
+    void editCoupons();
+    void addCoupon(const std::string& name, double discount, const std::string& expirationDate);
+    void chooseStore();
+    void createList();
+    void editList();
+    void showList();
+    void saveList();
+    void exit();
+    void saveUserProfiles();
+    void saveAllergens();
+    void saveCoupons();
+    void saveShoppingList();
+    
 
 private:
-    std::vector<Food> shoppingList;
-    std::vector<std::string> userProfiles;
-    std::vector<std::string> userAllergens;
-    std::vector<std::string> userCoupons;
+    // Private member functions and data members
 
-    // Helper methods for profile, allergens, and coupons
     void showProfileData();
     void editProfileData();
     void showAllergensData();
     void editAllergensData();
     void showCouponsData();
     void editCouponsData();
-
-    // Additional data members for stores, locations, and pricing
-    std::string selectedStore;
-    std::vector<Food> savedShoppingList;
-
-    // Helper methods for store and shopping list
     void showAvailableStores();
-    void createNewList();
+    void selectStore();
+    void addToShoppingList();
     void showSavedLists();
-    void editSavedList();
+    void selectShoppingList();
+    void editShoppingList();
+    void displayShoppingList();
     void calculateTotalPrice();
+    
 
-    // Additional private methods as needed
+    // Private data members
+    std::vector<UserProfile> userProfiles;
+    std::vector<Allergen> userAllergens;
+    std::vector<Coupon> userCoupons;
+    std::string selectedStore;
+    ShoppingList currentShoppingList;
 };
 
 #endif // DISPLAY_H

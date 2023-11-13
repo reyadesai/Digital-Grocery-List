@@ -15,8 +15,8 @@ int main () {
 
 
     }
-
-
+ //free memory
+    delete[] testBase;
     return 0;
 
 }

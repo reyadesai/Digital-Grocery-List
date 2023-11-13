@@ -6,15 +6,16 @@ using namespace std;
 
 class Coupon {
 public:
-Coupon(const string& name, double discount, const string expirationDate);
-string getName() const;
+Coupon(const std::string& name, double discount, const std::string& expirationDate = "N/A"); // Provide a default value for the expiration date
+std::string getName() const;
+void setName(const std::string& name);
 double getDiscount() const;
-string getExpirationDate() const;
+std::string getExpirationDate() const;
 
 private:
-string name;
+std::string name;
 double discount;
-string expirationDate;
+std::string expirationDate;
 
 
 
