@@ -13,7 +13,6 @@ Display::Display() {
     userProfiles = {UserProfile("User1"), UserProfile("User2")};
     userAllergens = {Allergen("Allergen1"), Allergen("Allergen2")};
     userCoupons = {Coupon(std::string("Coupon1"), 0.1), Coupon(std::string("Coupon2"), 0.2)};
-    // Created a ShoppingList object and called the loadFromDisk method
     ShoppingList selectedList;
     selectedList.loadFromDisk();
 
