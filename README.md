@@ -29,6 +29,7 @@ The user will first be brought to the screen to choose their profile. Upon choos
 
 ## Class Diagram
  <img width="686" alt="PNG image" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/5d35cf0c-9cd0-4d3e-a43a-e67984c739a5">
+
 All the classes inherit from Store List, which is the class that contains our main components such as adding an item to the list, removing items, changing the quantity, sorting them and then viewing the whole list. The coupon class contains the coupon name and the amount off of the certain purchase. Allergens contains different allergies a user has and will provide warnings if the user purchases an item that contains the allergen. Saved lists allows the user to view older lists and budget shows the max amount of money the user wants to spend. Location shows where the item is in the specific store and item is allowing the user to enter details about the item the user wants on the list. Lastly, shopping list is a summary of all the details from the shopping experience, which includes the whole list, and adding or removing items from the list. 
  > ## Phase III
  > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
