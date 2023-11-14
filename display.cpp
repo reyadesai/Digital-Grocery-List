@@ -3,6 +3,8 @@
 #include "shoppingList.h"
 #include "coupon.h"
 #include "userProfile.h"
+#include "food.h"
+#include "catalog.h"
 #include <iostream>
 #include <fstream>
 #include <algorithm>
@@ -56,7 +58,7 @@ void Display::saveUserProfiles() {
     }
 }
 void Display::saveAllergens() {
-    // Implement the logic to save allergens to a file
+    
     ofstream outFile("user_allergens.txt");
 
     if (outFile.is_open()) {
@@ -71,7 +73,7 @@ void Display::saveAllergens() {
 }
 
 void Display::saveCoupons() {
-    // Implement the logic to save coupons to a file
+    
     ofstream outFile("user_coupons.txt");
 
     if (outFile .is_open()) {
@@ -92,13 +94,12 @@ void Display::showProfile() {
 }
 
 void Display::editProfile() {
-    // Edit user's profile
+   
     editProfileData();
 }
 
 void Display::showAllergens() {
-    // Display user's allergen preferences
-    cout << "Allergens: ";
+    // Display user's allergies
     for (const Allergen& allergen : userAllergens) {
         cout << allergen.getName() << ", ";
     }
@@ -320,7 +321,7 @@ void Display::editList() {
             currentShoppingList.addItem(itemName, quantity, price);
             cout << "Item added to the list." << endl;
         } else if (choice == 2) {
-            // Allow the user to edit an existing item in the list
+            // Allow the user to edit 
             string itemName;
             int newQuantity;
 
@@ -335,7 +336,7 @@ void Display::editList() {
                 cout << "Item not found in the list." << endl;
             }
         } else if (choice == 3) {
-            // Allow the user to remove an item from the list
+            // Allow the user to remove 
             string itemName;
 
             cout << "Enter item name to remove: ";
@@ -353,7 +354,7 @@ void Display::editList() {
 }
 
 void Display::showList() {
-    // Display the shopping list
+    // Display
     displayShoppingList();
     calculateTotalPrice();
 }
@@ -364,7 +365,7 @@ void Display::saveList() {
 }
 
 void Display::exit() {
-    // Exit the display
+    // Exit 
 }
 
 
@@ -457,7 +458,7 @@ void Display::showAllergensData() {
 }
 void Display::editAllergensData() {
    for (Allergen& allergen : userAllergens) {
-        // Prompt the user for the updated allergen information
+        // Prompt the user for the updated allergy information
         cout << "Edit Allergen: " << allergen.getName() << endl;
         string updatedAllergen;
         cout << "Enter the updated allergen information: ";
@@ -483,7 +484,7 @@ void Display::editCouponsData() {
         cout << "Enter the updated coupon information: ";
         cin >> updatedCoupon;
         
-        // Update the coupon with the new information
+        // Update  coupon with the new information
         coupon.setName(updatedCoupon);
     }
 }
@@ -621,7 +622,7 @@ void Display::calculateTotalPrice() {
 }
 
 void Display::saveShoppingList() {
-    // Implement the logic to save the list to a file
+    
     ofstream outFile("shopping_list.txt");
 
     if (outFile.is_open()) {
