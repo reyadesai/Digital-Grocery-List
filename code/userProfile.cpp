@@ -1,13 +1,15 @@
 #include "userProfile.h"
 
-UserProfile::UserProfile(const std::string& name) : name(name) {
+using namespace std;
+
+UserProfile::UserProfile(const string& name) : name(name) {
 }
 
-std::string UserProfile::getName() const {
+string UserProfile::getName() const {
     return name;
 }
 
-void UserProfile::setName(const std::string& name) {
+void UserProfile::setName(const string& name) {
     this->name = name;
 }
 
@@ -24,7 +26,7 @@ void UserProfile::removeCoupon(const Coupon& coupon) {
     }
 }
 
-std::vector<Coupon> UserProfile::getCoupons() const {
+vector<Coupon> UserProfile::getCoupons() const {
     return userCoupons;
 }
 
@@ -41,6 +43,6 @@ void UserProfile::removeAllergen(const Allergen& allergen) {
     }
 }
 
-std::vector<Allergen> UserProfile::getAllergens() const {
+vector<Allergen> UserProfile::getAllergens() const {
     return userAllergens;
 }

@@ -8,11 +8,14 @@
 #include <iostream>
 #include <fstream>
 #include <algorithm>
+
+using namespace std;
+
 Display::Display() {
     // Initialize user data, available stores..
     userProfiles = {UserProfile("User1"), UserProfile("User2")};
     userAllergens = {Allergen("Allergen1"), Allergen("Allergen2")};
-    userCoupons = {Coupon(std::string("Coupon1"), 0.1), Coupon(std::string("Coupon2"), 0.2)};
+    userCoupons = {Coupon(string("Coupon1"), 0.1), Coupon(string("Coupon2"), 0.2)};
     ShoppingList selectedList;
     selectedList.loadFromDisk();
 
@@ -179,7 +182,7 @@ void Display::editCoupons() {
                 cout << "Enter the discount percentage (ex. 10.0 for 10%): ";
                 cin >> discount;
 
-                userCoupons.push_back(Coupon(std::string(couponName), discount / 100.0));
+                userCoupons.push_back(Coupon(string(couponName), discount / 100.0));
 
                 cout << "Coupon added successfully." << endl;
             } else if (choice == 2) {
@@ -232,7 +235,7 @@ void Display::editCoupons() {
         } while (choice != 4);
     }
 }
-void Display::addCoupon(const std::string& name, double discount, const std::string& expirationDate) {
+void Display::addCoupon(const string& name, double discount, const string& expirationDate) {
     Coupon newCoupon(name, discount, expirationDate);
     userCoupons.push_back(newCoupon);
 }
