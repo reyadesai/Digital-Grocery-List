@@ -8,6 +8,9 @@
 #include "coupon.h"
 #include "allergen.h"
 #include "userProfile.h"
+
+using namespace std;
+
 class Display {
 public:
     Display();
@@ -19,7 +22,7 @@ public:
     void editAllergens();
     void showCoupons();
     void editCoupons();
-    void addCoupon(const std::string& name, double discount, const std::string& expirationDate);
+    void addCoupon(const string& name, double discount, const string& expirationDate);
     void chooseStore();
     void createList();
     void editList();
@@ -52,10 +55,10 @@ private:
     
 
     // Private data members
-    std::vector<UserProfile> userProfiles;
-    std::vector<Allergen> userAllergens;
-    std::vector<Coupon> userCoupons;
-    std::string selectedStore;
+    vector<UserProfile> userProfiles;
+    vector<Allergen> userAllergens;
+    vector<Coupon> userCoupons;
+    string selectedStore;
     ShoppingList currentShoppingList;
 };
 

@@ -1,13 +1,15 @@
 #include "coupon.h"
 
-Coupon::Coupon(const std::string& name, double discount, const std::string& expirationDate)
+using namespace std;
+
+Coupon::Coupon(const string& name, double discount, const string& expirationDate)
     : name(name), discount(discount), expirationDate(expirationDate) {}
 
-std::string Coupon::getName() const {
+string Coupon::getName() const {
     return name;
 }
 
-void Coupon::setName(const std::string& name) {
+void Coupon::setName(const string& name) {
     this->name = name; // Set the name of the coupon
 }
 
@@ -15,6 +17,6 @@ double Coupon::getDiscount() const {
     return discount;
 }
 
-std::string Coupon::getExpirationDate() const {
+string Coupon::getExpirationDate() const {
     return expirationDate;
 }

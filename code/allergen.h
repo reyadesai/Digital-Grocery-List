@@ -3,18 +3,20 @@
 
 #include <string>
 
+using namespace std;
+
 class Allergen {
 public:
-    Allergen(const std::string& name);
+    Allergen(const string& name);
 
     // Getter for allergen name
-    std::string getName() const;
+    string getName() const;
 
     // Setter for allergen name
-    void setName(const std::string& name);
+    void setName(const string& name);
 
 private:
-    std::string name;
+    string name;
 };
 
 #endif

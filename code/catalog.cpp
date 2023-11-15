@@ -2,7 +2,6 @@
 
 #include "catalog.h"
  
- 
 
  Food* catalog::generateCatalog(){
 
@@ -72,6 +71,8 @@
     dataBase[30] = Food("Karen's Krazy Korean BBQ", "misc", 31, 9, 420);
 
     dataBase[31] = Food("Ben", "misc", 32, 9, .01);
+
+    dataBase[32] = Food("Samyak's Superlative Salmon Sushi", "misc", 33, 9, 9000);
 
 
     return dataBase;
