@@ -4,16 +4,19 @@
 #include <vector>
 #include <string>
 #include <sstream> 
-std::vector<std::string> ShoppingList::savedShoppingLists; // Define the static member variable
+
+using namespace std;
+
+vector<string> ShoppingList::savedShoppingLists; // Define the static member variable
 
 ShoppingList::ShoppingList() : items() {
     // Initialize an empty shopping list
 }
 
-ShoppingList::ShoppingList(const std::string& name) : items() {
+ShoppingList::ShoppingList(const string& name) : items() {
     // Initialize a shopping list with a name
 }
-void ShoppingList::addItem(const std::string& itemName, int quantity, double price) {
+void ShoppingList::addItem(const string& itemName, int quantity, double price) {
     // Add an item to the shopping list
     ShoppingItem item;
     item.name = itemName;
@@ -22,7 +25,7 @@ void ShoppingList::addItem(const std::string& itemName, int quantity, double pri
     items.push_back(item);
 }
 
-bool ShoppingList::editItem(const std::string& itemName, int newQuantity) {
+bool ShoppingList::editItem(const string& itemName, int newQuantity) {
     for (ShoppingItem& item : items) {
         if (item.name == itemName) {
             item.quantity = newQuantity;
@@ -32,7 +35,7 @@ bool ShoppingList::editItem(const std::string& itemName, int newQuantity) {
     return false;  // if item not found
 }
 
-bool ShoppingList::removeItem(const std::string& itemName) {
+bool ShoppingList::removeItem(const string& itemName) {
     auto item = items.begin();
     while (item != items.end()) {
         if (item->name == itemName) {
@@ -47,7 +50,7 @@ bool ShoppingList::removeItem(const std::string& itemName) {
 
 void ShoppingList::displayItems() const {
     for (const ShoppingItem& item : items) {
-        std::cout << "Item: " << item.name << ", Quantity: " << item.quantity << ", Price: $" << item.price << std::endl;
+        cout << "Item: " << item.name << ", Quantity: " << item.quantity << ", Price: $" << item.price << endl;
     }
 }
 
@@ -59,19 +62,19 @@ double ShoppingList::calculateTotalPrice() const {
     return totalPrice;
 }
 
-void ShoppingList::saveToFile(std::ofstream& outFile) const {
+void ShoppingList::saveToFile(ofstream& outFile) const {
     for (const ShoppingItem& item : items) {
-        outFile << item.name << " " << item.quantity << " " << item.price << std::endl;
+        outFile << item.name << " " << item.quantity << " " << item.price << endl;
     }
 }
 
 void ShoppingList::loadFromDisk() {
-   std::ifstream inputFile("shopping_list.txt");
+   ifstream inputFile("shopping_list.txt");
     if (inputFile.is_open()) {
-        std::string line;
-        while (std::getline(inputFile, line)) {
-            std::istringstream iss(line);
-            std::string itemName;
+        string line;
+        while (getline(inputFile, line)) {
+            istringstream iss(line);
+            string itemName;
             int quantity;
             double price;
             if (iss >> itemName >> quantity >> price) {
@@ -81,10 +84,10 @@ void ShoppingList::loadFromDisk() {
 
         inputFile.close();
     } else {
-        std::cerr << "Error: Could not open shopping_list.txt" << std::endl;
+        cerr << "Error: Could not open shopping_list.txt" << endl;
     }
 }
-std::vector<std::string> ShoppingList::getSavedShoppingLists() {
+vector<string> ShoppingList::getSavedShoppingLists() {
     // Return the list of saved shopping list names
     return savedShoppingLists;
 }
