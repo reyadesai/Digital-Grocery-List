@@ -4,8 +4,7 @@
 #include "catalog.h"
 using namespace std;
 
-int main () {
-
+int main() {
     Food* testBase = catalog::generateCatalog();
     
 

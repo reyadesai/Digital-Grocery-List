@@ -1,7 +1,7 @@
 #include <iostream>
 
 #include "catalog.h"
- 
+#include "food.h"
  
 
  Food* catalog::generateCatalog(){
