@@ -18,6 +18,10 @@ int main() {
     delete[] testBase;
 
     /*
+    0.
+    Prereqs:
+    Constructors
+
     1.
     Welcome msg
 
