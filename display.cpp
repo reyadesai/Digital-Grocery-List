@@ -436,7 +436,6 @@ void Display::editProfileData() {
             auto it = find_if(userProfiles.begin(), userProfiles.end(), [&profileName](const UserProfile& profile) {
                 return profile.getName() == profileName;
             });
-
             if (it != userProfiles.end()) {
                 userProfiles.erase(it);
                 cout << "Profile removed successfully." << endl;

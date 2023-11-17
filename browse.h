@@ -4,11 +4,9 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include "shoppingList.h"
 #include "coupon.h"
-#include "allergen.h"
 #include "catalog.h"
-#include "userProfile.h"
+#include "food.h"
 
 class Browse {
     public:
