@@ -14,7 +14,7 @@ using namespace std;
 class Display {
 public:
     Display();
-    //~Display();
+    ~Display();
 
     void showProfile();
     void editProfile();
