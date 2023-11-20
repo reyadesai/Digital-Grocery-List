@@ -1,26 +1,33 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <vector>
 #include "food.cpp"
 #include "catalog.cpp"
 #include "coupon.cpp"
 #include "userProfile.cpp"
-// #include "display.cpp"
-// #include "browse.cpp"
-#include <vector>
+#include "display.cpp"
+#include "browse.cpp"
+
+
+
 using namespace std;
 
 int main() {
     Food* testBase = catalog::generateCatalog();
+    
 
 /*
     0.
     Prereqs:
     Constructors
+    //display
+
 */
 Display display;
 
     cout << "Welcome to the Grocery Shopping App!" << endl;
+
 
 string username;
     cout << "Enter your username: ";
@@ -29,11 +36,13 @@ string username;
     // we need to have a function in the Display class to handle user login
     bool loginSuccess = display.loginUser(username);
 
+
     if (!loginSuccess) {
         cout << "User not found. Creating a new profile..." << endl;
         // we need a function in the Display class to handle user registration
         display.registerUser(username);
     }
+
 int option;
     do {
         cout << "Options:" << endl;
@@ -93,6 +102,13 @@ int option;
                 cout << "Invalid option. Please try again." << endl;
         }
     } while (option != 4);
+
+ 
+
+
+   
+
+             
 
 
 /*
@@ -267,6 +283,4 @@ cout << couponName;
 
 
     
-    return 0;
-
-}
+    
