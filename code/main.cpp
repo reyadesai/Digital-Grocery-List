@@ -3,12 +3,17 @@
 #include "food.h"
 #include "catalog.h"
 #include "display.h"
+#include "userProfile.h"
+#include "allergen.h"
 using namespace std;
 
 int main() {
     Food* testBase = catalog::generateCatalog();
-
-
+    UserProfile Gency("Gency");
+    Allergen Beef("beef");
+    Gency.addAllergen(Beef);
+    //cout << (Gency.getAllergens()).at(0).getName() << endl;
+    
 /*
     0.
     Prereqs:
@@ -18,23 +23,33 @@ int main() {
 */
 Display display;
 
-    cout << "Welcome to the Grocery Shopping App!" << endl;
+    cout << "Welcome to the Grocery Shopping App!" << endl << endl;
 /*
     1.
     Welcome msg
 */
-string username;
-    cout << "Enter your username: ";
-    cin >> username;
+    string username;
+    bool pass;
+    //asks for username and doesn't let you pass until u get it right
+    //can be made to function
+    do {
+        
+        cout << "Enter your username: " << endl;
+        cin >> username;
+        cout << endl;
 
-    // we need to have a function in the Display class to handle user login
-    bool loginSuccess = display.loginUser(username);
+        if(username == "Gency") {
+            pass = true;
+        }
 
-    if (!loginSuccess) {
-        cout << "User not found. Creating a new profile..." << endl;
-        // we need a function in the Display class to handle user registration
-        display.registerUser(username);
-    }
+        else if(username == "!") {
+            return 0;
+        }
+
+        cout << "Press ! to quit" << endl << endl;
+
+    } while(pass == false);
+
 /*
     2.
     Choose User Profile:
@@ -46,69 +61,28 @@ string username;
     3.
     After Choosing leads to options:
 */
-int option;
+
+    int option;
     do {
         cout << "Options:" << endl;
         cout << "1. Manage Allergens" << endl;
         cout << "2. Manage Coupons" << endl;
-        cout << "3. Browse Catalog" << endl;  
-        cout << "4. Confirm and Proceed" << endl;
-        cout << "5. Quit" << endl;
+        cout << "3. Choose Store" << endl;  
+        cout << "4. Quit" << endl;
         cout << "Enter your choice: ";
         cin >> option;
-        switch (option) {
-            case 1:
-                // 3.1 Manage Allergens
-                display.showAllergens();
-                display.editAllergens();
-                break;
-
-            case 2:
-                // 3.2 Manage Coupons
-                display.showCoupons();
-                // Add logic to edit coupons if needed
-                break;
-
-            case 3:
-                // 3.3 Browse Catalog
-                int browseOption;
-                cout << "Options for Browsing Catalog:" << endl;
-                cout << "1. Alphabetically" << endl;
-                cout << "2. By Price" << endl;
-                cout << "Enter your choice: ";
-                cin >> browseOption;
-
-                if (browseOption == 1) {
-                    // Browse Alphabetically
-                    display.browseCatalogAlphabetically(); //gotta implement these fxns accordingly in the display class
-                } else if (browseOption == 2) {
-                    // Browse By Price
-                    display.browseCatalogByPrice();
-                } else {
-                    cout << "Invalid option. Please try again." << endl;
-                }
-                break;
-
-            case 4:
-                // 3.4 Confirm and Proceed
-                display.selectStore(); // gotta implement this function in Display class
-                display.manageLists(); // gotta implement the logic for managing lists
-                display.checkout();     // gotta implement the logic for checkout
-                break;
-
-            case 5:
-                //  Quit
-                cout << "Goodbye!" << endl;
-                return 0;
-
-            default:
-                cout << "Invalid option. Please try again." << endl;
+        cout << endl;
+        if(option == 1) {
+            cout << "Current Allergens:" << endl;
+            Gency.showAllergens();
+            display.editAllergens()
+        
         }
-    } while (option != 4);
 
-    return 0;
+    } while(option != 4);
+       
+  
 
-}
 
 /*
     3.1
@@ -192,7 +166,7 @@ int option;
 
 
  // Display the catalog
-  
+  /*
     cout << "Catalog:" << endl;
 
    
@@ -297,7 +271,8 @@ cout << couponName;
     Back To New Lists and start all over
     loop it and quit with q
 */
-
+return 0;
+}
 
 
     
