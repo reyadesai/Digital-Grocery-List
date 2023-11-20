@@ -11,6 +11,8 @@ int main() {
     0.
     Prereqs:
     Constructors
+    //display
+
 */
 
 /*
@@ -22,6 +24,7 @@ int main() {
     2.
     Choose User Profile:
     (user logins)
+    //unique coupons per profile
 */
 
 /*
