@@ -5,6 +5,8 @@
 #include "catalog.cpp"
 #include "coupon.cpp"
 #include "userProfile.cpp"
+// #include "display.cpp"
+// #include "browse.cpp"
 #include <vector>
 using namespace std;
 
@@ -16,40 +18,82 @@ int main() {
     Prereqs:
     Constructors
 */
+Display display;
 
-/*
-    1.
-    Welcome msg
-*/
+    cout << "Welcome to the Grocery Shopping App!" << endl;
 
-/*
-    2.
-    Choose User Profile:
-    (user logins)
-*/
+string username;
+    cout << "Enter your username: ";
+    cin >> username;
 
-/*
-    3.
-    After Choosing leads to two options:
-*/
+    // we need to have a function in the Display class to handle user login
+    bool loginSuccess = display.loginUser(username);
 
-/*
-    3.1
-    ->Allergens
-        -view[getter]
-        -edit[setter]
-*/
-/*
-    3.2
-    ->Coupons
-        -view[getter]
-        -edit[setter]
-*/
+    if (!loginSuccess) {
+        cout << "User not found. Creating a new profile..." << endl;
+        // we need a function in the Display class to handle user registration
+        display.registerUser(username);
+    }
+int option;
+    do {
+        cout << "Options:" << endl;
+        cout << "1. Manage Allergens" << endl;
+        cout << "2. Manage Coupons" << endl;
+        cout << "3. Browse Catalog" << endl;  
+        cout << "4. Confirm and Proceed" << endl;
+        cout << "5. Quit" << endl;
+        cout << "Enter your choice: ";
+        cin >> option;
+        switch (option) {
+            case 1:
+                // 3.1 Manage Allergens
+                display.showAllergens();
+                display.editAllergens();
+                break;
 
-/*
-    3.3
-    Goes into Confirm
-*/
+            case 2:
+                // 3.2 Manage Coupons
+                display.showCoupons();
+                // Add logic to edit coupons if needed
+                break;
+
+            case 3:
+                // 3.3 Browse Catalog
+                int browseOption;
+                cout << "Options for Browsing Catalog:" << endl;
+                cout << "1. Alphabetically" << endl;
+                cout << "2. By Price" << endl;
+                cout << "Enter your choice: ";
+                cin >> browseOption;
+
+                if (browseOption == 1) {
+                    // Browse Alphabetically
+                    display.browseCatalogAlphabetically(); //gotta implement these fxns accordingly in the display class
+                } else if (browseOption == 2) {
+                    // Browse By Price
+                    display.browseCatalogByPrice();
+                } else {
+                    cout << "Invalid option. Please try again." << endl;
+                }
+                break;
+
+            case 4:
+                // 3.4 Confirm and Proceed
+                display.selectStore(); // gotta implement this function in Display class
+                display.manageLists(); // gotta implement the logic for managing lists
+                display.checkout();     // gotta implement the logic for checkout
+                break;
+
+            case 5:
+                //  Quit
+                cout << "Goodbye!" << endl;
+                return 0;
+
+            default:
+                cout << "Invalid option. Please try again." << endl;
+        }
+    } while (option != 4);
+
 
 /*
     4.
@@ -112,88 +156,105 @@ int main() {
     7.2 Add Coupons
         ->idk bout that yet
 */
-// Food price(foodName, foodType, foodID, foodQuantity, foodPrice);
-//  Food* catalog = generateCatalog();
 
-    // Display the catalog
-       Food* catalog = catalog::generateCatalog();
+
  // Display the catalog
-    cout << "Catalog:\n";
-    for (int i = 0; i < 35; ++i) {
-        // Use std::fixed and std::setprecision to display prices with two decimal places
-        cout << catalog[i].getName() << " - $" << fixed << setprecision(2) << catalog[i].getPrice() << "\n";
-    }
+  
+    cout << "Catalog:" << endl;
 
-
-    // Get coupon information from the user
-    vector<Coupon> coupons;
-
-    // Get coupon information from the user
-    string couponName;
-    double couponDiscount;
-    string couponExpirationDate;
-
-    cout << "\nEnter coupon information:\n";
-    cout << "Coupon Name: ";
-    cin >> couponName;
-
-    cout << "Discount Percentage: ";
-    cin >> couponDiscount;
-
-    cout << "Expiration Date (YYYY-MM-DD): ";
-    cin >> couponExpirationDate;
-
-    // Create a coupon
-    Coupon coupon(couponName, couponDiscount, couponExpirationDate);
-
-    // Save the coupon in the vector
-    coupons.push_back(coupon);
-
-    // Display coupon information
-    cout << "\nCoupon Information:\n";
-    cout << "Name: " << coupon.getName() << "\n";
-    cout << "Discount: " << coupon.getDiscount() << "%\n";
-    cout << "Expiration Date: " << coupon.getExpirationDate() << "\n";
-
-    // Add the coupon to the user's profile
-    UserProfile userProfile("User1"); // Replace "User1" with the actual user name
-    userProfile.addCoupon(coupon);
-
-    // Get the item the user wants to apply the coupon to
-    cout << "\nEnter the name of the item to apply the coupon to: ";
-    string itemName;
-    cin >> itemName;
-
-    // Find the item in the catalog
-    int itemIndex = -1;
-    for (int i = 0; i < 35; ++i) {
-        if (catalog[i].getName() == itemName) {
-            itemIndex = i;
-            break;
-        }
-    }
-
-    // Apply the coupon to the specified item
-    if (itemIndex != -1) {
-    double discountAmount = coupon.getDiscount() / 100.0;
-    double discountedPrice = (catalog[itemIndex].getPrice()) - (catalog[itemIndex].getPrice() * (discountAmount));
    
-    // Update the price for the specified item
-    catalog[itemIndex].setPrice(discountedPrice);
+    UserProfile userProfile("User1"); 
 
-    // Display the updated catalog
-    cout << "\nUpdated Catalog:\n";
-    for (int i = 0; i < 35; ++i) {
-        cout << catalog[i].getName() << " - $" << fixed << setprecision(2) << catalog[i].getPrice() << "\n";
+    char userInput;
+    
+ vector<Coupon> coupons;
+    do {
+
+        for (int i = 0; i < 35; ++i) {
+            // Use fixed and setprecision to display prices with two decimal places
+            cout << testBase[i].getName() << " - $" << fixed << setprecision(2) << testBase[i].getPrice() << endl;
+        }
+       
+
+        // Get coupon information from the user
+        string couponName;
+        double couponDiscount;
+        string couponExpirationDate;
+
+        cout << "Enter coupon information:" << endl;
+        cout << "Coupon Name: " << endl;
+        cout << endl;
+     
+        getline(cin, couponName);
+     
+cout << couponName;
+        cout << "Discount Percentage: ";
+        cin >> couponDiscount;
+        cin.ignore();
+        cout << "Expiration Date (YYYY-MM-DD): ";
+        cin >> couponExpirationDate;
+        cin.ignore();
+        // Create a coupon
+        Coupon coupon(couponName, couponDiscount, couponExpirationDate);
+
+        // Save the coupon in the vector
+        coupons.push_back(coupon);
+
+        // Display coupon information
+        cout << "\nCoupon Information:" << endl;
+        cout << "Name: " << coupon.getName() << endl;
+        cout << "Discount: " << coupon.getDiscount() << "%" << endl;
+        cout << "Expiration Date: " << coupon.getExpirationDate() << endl;
+
+        // Add the coupon to the user's profile
+        userProfile.addCoupon(coupon);
+
+        // Get the item the user wants to apply the coupon to
+        cout << "Enter the name of the item to apply the coupon to: " << endl;
+   
+        string itemName;
+        getline(cin, itemName);
+
+        // Find the item in the catalog
+        int itemIndex = -1;
+        for (int i = 0; i < 35; ++i) {
+            if (testBase[i].getName() == itemName) {
+                itemIndex = i;
+                break;
+            }
+        }
+
+        // Apply the coupon to the specified item
+        if (itemIndex != -1) {
+            double discountAmount = coupon.getDiscount() / 100.0;
+            double discountedPrice = (testBase[itemIndex].getPrice()) - (testBase[itemIndex].getPrice() * (discountAmount));
+
+            // Update the price for the specified item
+            testBase[itemIndex].setPrice(discountedPrice);
+
+            // Display the updated catalog
+            cout << "Updated Catalog:" << endl;
+            for (int i = 0; i < 35; ++i) {
+                cout << testBase[i].getName() << " - $" << fixed << setprecision(2) << testBase[i].getPrice() << endl;
+            }
+        } else {
+            cout << "Item not found in the catalog." << endl;
+        }
+
+        cout << "Do you want to add another coupon? (Enter 'y' or 'Y' to continue): " << endl;
+        cin >> userInput;
+        cin.ignore();
+    } while (userInput == 'y' || userInput == 'Y');
+
+    // Display all user's coupons before exiting
+    vector<Coupon> userCoupons = userProfile.getCoupons();
+    cout << "All User Coupons:" << endl;
+    for (const auto& coupon : userCoupons) {
+        cout << "Name: " << coupon.getName() << ", Discount: " << coupon.getDiscount() << "%, Expiration Date: " << coupon.getExpirationDate() << endl;
     }
-} else {
-    cout << "\nItem not found in the catalog.\n";
-}
 
     // Clean up the allocated memory for the catalog
-    delete[] catalog;
-
-
+    delete[] testBase;
 /*
         7.3 Auto Saves List
 */
