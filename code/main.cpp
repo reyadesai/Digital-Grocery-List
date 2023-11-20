@@ -1,16 +1,8 @@
 #include <iostream>
-#include <iomanip>
 #include <string>
-#include <vector>
-#include "food.cpp"
-#include "catalog.cpp"
-#include "coupon.cpp"
-#include "userProfile.cpp"
-#include "display.cpp"
-#include "browse.cpp"
-
-
-
+#include "food.h"
+#include "catalog.h"
+#include "display.h"
 using namespace std;
 
 int main() {
@@ -27,8 +19,10 @@ int main() {
 Display display;
 
     cout << "Welcome to the Grocery Shopping App!" << endl;
-
-
+/*
+    1.
+    Welcome msg
+*/
 string username;
     cout << "Enter your username: ";
     cin >> username;
@@ -36,13 +30,22 @@ string username;
     // we need to have a function in the Display class to handle user login
     bool loginSuccess = display.loginUser(username);
 
-
     if (!loginSuccess) {
         cout << "User not found. Creating a new profile..." << endl;
         // we need a function in the Display class to handle user registration
         display.registerUser(username);
     }
+/*
+    2.
+    Choose User Profile:
+    (user logins)
+    //unique coupons per profile
+*/
 
+/*
+    3.
+    After Choosing leads to options:
+*/
 int option;
     do {
         cout << "Options:" << endl;
@@ -103,13 +106,27 @@ int option;
         }
     } while (option != 4);
 
- 
+    return 0;
 
+}
 
-   
+/*
+    3.1
+    ->Allergens
+        -view[getter]
+        -edit[setter]
+*/
+/*
+    3.2
+    ->Coupons
+        -view[getter]
+        -edit[setter]
+*/
 
-             
-
+/*
+    3.3
+    Goes into Confirm
+*/
 
 /*
     4.
@@ -270,7 +287,7 @@ cout << couponName;
     }
 
     // Clean up the allocated memory for the catalog
-    delete[] testBase
+    delete[] testBase;
 /*
         7.3 Auto Saves List
 */
