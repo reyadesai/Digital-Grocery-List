@@ -58,5 +58,7 @@ void Food::reduceQTY(int change) {
     cout << "work on reduceqty: " << change << endl;
 }
 
-
+void Food:: setPrice(double newPrice){
+    price = newPrice;
+}
 
