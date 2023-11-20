@@ -15,7 +15,7 @@ using namespace std;
 
 int main() {
     Food* testBase = catalog::generateCatalog();
-    
+
 
 /*
     0.
@@ -270,7 +270,7 @@ cout << couponName;
     }
 
     // Clean up the allocated memory for the catalog
-    delete[] testBase;
+    delete[] testBase
 /*
         7.3 Auto Saves List
 */
@@ -282,5 +282,5 @@ cout << couponName;
 */
 
 
-    
+
     
