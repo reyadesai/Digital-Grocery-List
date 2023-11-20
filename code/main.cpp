@@ -26,7 +26,7 @@ Display display;
 string username;
     cout << "Enter your username: ";
     cin >> username;
-/*
+
     // we need to have a function in the Display class to handle user login
     bool loginSuccess = display.loginUser(username);
 
@@ -35,7 +35,6 @@ string username;
         // we need a function in the Display class to handle user registration
         display.registerUser(username);
     }
-    */
 /*
     2.
     Choose User Profile:
@@ -47,7 +46,6 @@ string username;
     3.
     After Choosing leads to options:
 */
-/*
 int option;
     do {
         cout << "Options:" << endl;
@@ -107,8 +105,7 @@ int option;
                 cout << "Invalid option. Please try again." << endl;
         }
     } while (option != 4);
-    
-*/
+
     return 0;
 
 }

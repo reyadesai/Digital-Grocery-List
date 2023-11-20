@@ -987,18 +987,7 @@ CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp \
   /usr/include/c++/8/istream \
   /usr/include/c++/8/bits/istream.tcc \
   code/food.h \
-  code/catalog.h \
-  code/display.h \
-  /usr/include/c++/8/vector \
-  /usr/include/c++/8/bits/stl_construct.h \
-  /usr/include/c++/8/bits/stl_uninitialized.h \
-  /usr/include/c++/8/bits/stl_vector.h \
-  /usr/include/c++/8/bits/stl_bvector.h \
-  /usr/include/c++/8/bits/vector.tcc \
-  code/shoppingList.h \
-  code/coupon.h \
-  code/allergen.h \
-  code/userProfile.h
+  code/catalog.h
 
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp \
   /usr/include/stdc-predef.h \
