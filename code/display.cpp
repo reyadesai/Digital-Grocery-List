@@ -17,7 +17,7 @@ Display::Display() {
     userAllergens = {Allergen("Allergen1"), Allergen("Allergen2")};
     userCoupons = {Coupon(string("Coupon1"), 0.1), Coupon(string("Coupon2"), 0.2)};
     ShoppingList selectedList;
-    selectedList.loadFromDisk();
+    //selectedList.loadFromDisk();
 
     selectedStore = "";
     currentShoppingList = ShoppingList(); // Initializes an empty shopping list
