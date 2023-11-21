@@ -22,6 +22,10 @@ public:
     void removeAllergen(const Allergen& allergen);
     std::vector<Allergen> getAllergens() const;
     void showAllergens();
+    void editAllergens();
+
+    void showCoupons();
+    void editCoupons();
 
     
 
