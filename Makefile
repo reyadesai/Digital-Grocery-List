@@ -249,6 +249,30 @@ code/food.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/food.cpp.s
 .PHONY : code/food.cpp.s
 
+code/login.o: code/login.cpp.o
+.PHONY : code/login.o
+
+# target to build an object file
+code/login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.o
+.PHONY : code/login.cpp.o
+
+code/login.i: code/login.cpp.i
+.PHONY : code/login.i
+
+# target to preprocess a source file
+code/login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.i
+.PHONY : code/login.cpp.i
+
+code/login.s: code/login.cpp.s
+.PHONY : code/login.s
+
+# target to generate assembly for a file
+code/login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.s
+.PHONY : code/login.cpp.s
+
 code/main.o: code/main.cpp.o
 .PHONY : code/main.o
 
@@ -345,6 +369,9 @@ help:
 	@echo "... code/food.o"
 	@echo "... code/food.i"
 	@echo "... code/food.s"
+	@echo "... code/login.o"
+	@echo "... code/login.i"
+	@echo "... code/login.s"
 	@echo "... code/main.o"
 	@echo "... code/main.i"
 	@echo "... code/main.s"

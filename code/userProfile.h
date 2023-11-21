@@ -21,6 +21,7 @@ public:
     void addAllergen(const Allergen& allergen);
     void removeAllergen(const Allergen& allergen);
     std::vector<Allergen> getAllergens() const;
+    void showAllergens();
 
     
 

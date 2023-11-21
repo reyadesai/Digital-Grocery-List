@@ -1,4 +1,5 @@
 #include "userProfile.h"
+#include "iostream"
 
 using namespace std;
 
@@ -45,4 +46,10 @@ void UserProfile::removeAllergen(const Allergen& allergen) {
 
 vector<Allergen> UserProfile::getAllergens() const {
     return userAllergens;
+}
+
+void UserProfile::showAllergens() {
+    for(unsigned i = 0; i < userAllergens.size(); i++) {
+        cout << (userAllergens.at(i)).getName() << endl;
+    }
 }
