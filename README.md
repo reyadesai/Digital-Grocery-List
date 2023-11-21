@@ -32,12 +32,8 @@ The user will first be brought to the screen to choose their profile. Upon choos
 
 All the classes inherit from Store List, which is the class that contains our main components such as adding an item to the list, removing items, changing the quantity, sorting them and then viewing the whole list. The coupon class contains the coupon name and the amount off of the certain purchase. Allergens contains different allergies a user has and will provide warnings if the user purchases an item that contains the allergen. Saved lists allows the user to view older lists and budget shows the max amount of money the user wants to spend. Location shows where the item is in the specific store and item is allowing the user to enter details about the item the user wants on the list. Lastly, shopping list is a summary of all the details from the shopping experience, which includes the whole list, and adding or removing items from the list. 
  > ## Phase III
- > You will need to schedule a check-in for the second scrum meeting with the same reader you had your first scrum meeting with (using Calendly). Your entire team must be present. This meeting will occur on Zoom and should be conducted by Wednesday of week 8.
- 
- > BEFORE the meeting you should do the following:
- > * Update your class diagram from Phase II to include any feedback you received from your TA/grader.
- > * Considering the SOLID design principles, reflect back on your class diagram and think about how you can use the SOLID principles to improve your design. You should then update the README.md file by adding the following:
- >   * A new class diagram incorporating your changes after considering the SOLID principles.
+<img width="1040" alt="Screenshot 2023-11-20 at 4 10 22 PM" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/ebbdac17-b667-49f2-bcc2-8fa8987ede3a">
+
  >   * For each update in your class diagram, you must explain in 3-4 sentences:
  >     * What SOLID principle(s) did you apply?
  >     * How did you apply it? i.e. describe the change.
