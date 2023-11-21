@@ -292,10 +292,6 @@ void Display::createList() {
         }
     } while (choice != 2);
 }
-
-
-
-
 void Display::editList() {
     int choice;
     do {

@@ -13,6 +13,8 @@ int main() {
     UserProfile Gency("Gency");
     Allergen Beef("beef");
     Gency.addAllergen(Beef);
+    Coupon Special("Special", 50);
+    Gency.addCoupon(Special);
     login test;
     //cout << (Gency.getAllergens()).at(0).getName() << endl;
     
@@ -23,22 +25,18 @@ int main() {
     //display
 
 */
-
     cout << "Welcome to the Grocery Shopping App!" << endl << endl;
 /*
     1.
     Welcome msg
 */
-    
     //asks for username and doesn't let you pass until u get it right
     int key;
     do {
-        
         key = test.userLogin();
         if(key == 1) {
             return 0;
         }
-
     } while(key != 0);
 
 /*
@@ -60,8 +58,14 @@ int option;
         if(option == 1) {
             cout << "Current Allergens:" << endl;
             Gency.showAllergens();
-            //display.editAllergens();
+            Gency.editAllergens();
         
+        }
+        if(option == 2) {
+            cout << "Current Coupons" << endl;
+            //get help on getname
+            Gency.showCoupons();
+            Gency.editCoupons();
         }
 
     } while(option != 4);
