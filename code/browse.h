@@ -8,7 +8,7 @@
 #include "catalog.h"
 #include "food.h"
 
-class Browse {
+class Browse {//needs to be friend of food 
     public:
         Browse();
         ~Browse();
