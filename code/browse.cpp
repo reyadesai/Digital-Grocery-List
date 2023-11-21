@@ -22,13 +22,13 @@ void Browse::showCatalog(){
         int arraySize = 35;
         if(userInput ==1){
             for(int i =0; i< arraySize; i++){
-                cout<< counter<<". "<< dataBase[i]<<endl;
+                cout<< counter<<". "<< dataBase[i]<<endl;//
                 counter++;
             }
         }else if(userInput ==2){
             for(int i =0; i< arraySize; i++){b
                 if(dataBase.at(i).getType()== "meat"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;//change
                     counter++;
                 }else{
                     cout<< "End of meat items."<<endl;
