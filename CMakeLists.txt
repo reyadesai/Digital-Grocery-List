@@ -10,4 +10,5 @@ ADD_EXECUTABLE(glist
     code/coupon.cpp
     code/catalog.cpp
     code/main.cpp
+    code/login.cpp
 )

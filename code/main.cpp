@@ -2,9 +2,10 @@
 #include <string>
 #include "food.h"
 #include "catalog.h"
-#include "display.h"
+//#include "display.h"
 #include "userProfile.h"
 #include "allergen.h"
+#include "login.h"
 using namespace std;
 
 int main() {
@@ -12,6 +13,7 @@ int main() {
     UserProfile Gency("Gency");
     Allergen Beef("beef");
     Gency.addAllergen(Beef);
+    login test;
     //cout << (Gency.getAllergens()).at(0).getName() << endl;
     
 /*
@@ -21,34 +23,23 @@ int main() {
     //display
 
 */
-Display display;
 
     cout << "Welcome to the Grocery Shopping App!" << endl << endl;
 /*
     1.
     Welcome msg
 */
-    string username;
-    bool pass;
+    
     //asks for username and doesn't let you pass until u get it right
-    //can be made to function
+    int key;
     do {
         
-        cout << "Enter your username: " << endl;
-        cin >> username;
-        cout << endl;
-
-        if(username == "Gency") {
-            pass = true;
-        }
-
-        else if(username == "!") {
+        key = test.userLogin();
+        if(key == 1) {
             return 0;
         }
 
-        cout << "Press ! to quit" << endl << endl;
-
-    } while(pass == false);
+    } while(key != 0);
 
 /*
     2.
@@ -56,13 +47,7 @@ Display display;
     (user logins)
     //unique coupons per profile
 */
-
-/*
-    3.
-    After Choosing leads to options:
-*/
-
-    int option;
+int option;
     do {
         cout << "Options:" << endl;
         cout << "1. Manage Allergens" << endl;
@@ -75,14 +60,19 @@ Display display;
         if(option == 1) {
             cout << "Current Allergens:" << endl;
             Gency.showAllergens();
-            display.editAllergens()
+            //display.editAllergens();
         
         }
 
     } while(option != 4);
+/*
+    3.
+    After Choosing leads to options:
+*/
+
+    
        
   
-
 
 /*
     3.1
