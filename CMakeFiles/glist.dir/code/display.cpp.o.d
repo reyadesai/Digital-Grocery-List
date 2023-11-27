@@ -120,9 +120,9 @@ CMakeFiles/glist.dir/code/display.cpp.o: \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
  /usr/include/c++/8/fstream /usr/include/c++/8/bits/codecvt.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++io.h \

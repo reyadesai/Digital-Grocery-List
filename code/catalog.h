@@ -6,6 +6,7 @@
 class catalog : Food {
 public:
     static Food* generateCatalog();
+
 };
 
 #endif
