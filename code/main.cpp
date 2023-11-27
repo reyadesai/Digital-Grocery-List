@@ -49,8 +49,8 @@ int option;
     do {
         cout << "Options:" << endl;
         cout << "1. Manage Allergens" << endl;
-        cout << "2. Manage Coupons" << endl;
-        cout << "3. Choose Store" << endl;  
+        cout << "2. Manage Coupons" << endl;  
+        cout << "3. Next" << endl;
         cout << "4. Quit" << endl;
         cout << "Enter your choice: ";
         cin >> option;
@@ -67,17 +67,17 @@ int option;
             Gency.showCoupons();
             Gency.editCoupons();
         }
+        if(option == 4) {
+            return 0;
+        }
 
-    } while(option != 4);
+    } while(option != 3);
+    
 /*
     3.
     After Choosing leads to options:
 */
-
-    
-       
   
-
 /*
     3.1
     ->Allergens
@@ -114,7 +114,12 @@ int option;
     6.
     New List:
 */
+cout << "Catalog: " << endl;
+cout << "---------" << endl;
 
+for(unsigned i = 0; i < 32; i++) {
+    cout << i << ". " << testBase[i].getName() << endl;
+}
 /*
     6.1
     Browse Catalog:

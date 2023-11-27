@@ -8,7 +8,7 @@
 
  Food* catalog::generateCatalog(){
 
-    Food* dataBase = new Food[35];
+    Food* dataBase = new Food[33];
 
     //beef
     dataBase[0] = Food("beef", "meat", 1, 9, 30.00);
@@ -80,4 +80,6 @@
 
     return dataBase;
  }
+
+ 
 

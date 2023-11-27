@@ -634,9 +634,9 @@ CMakeFiles/glist.dir/code/display.cpp.o: code/display.cpp \
   code/shoppingList.h \
   code/coupon.h \
   code/allergen.h \
-  code/userProfile.h \
-  code/food.h \
   code/catalog.h \
+  code/food.h \
+  code/userProfile.h \
   /usr/include/c++/8/fstream \
   /usr/include/c++/8/bits/codecvt.h \
   /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
