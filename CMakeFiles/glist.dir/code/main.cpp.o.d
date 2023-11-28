@@ -120,4 +120,5 @@ CMakeFiles/glist.dir/code/main.cpp.o: \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.h
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h

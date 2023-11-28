@@ -367,7 +367,7 @@ void Display::exit() {
 }
 
 
-    void Display::showProfileData() {
+void Display::showProfileData() {
     // Display user's profile details
     for (const UserProfile& profile : userProfiles) {
         cout << "User Profile: " << profile.getName() << endl;
@@ -535,7 +535,7 @@ void Display::showSavedLists() {
         cout << listName << endl;
     }
 }
-
+/*
 void Display::selectShoppingList() {
     // allow the user to select a saved shopping list
     cout << "Enter the name of the shopping list you want to select: ";
@@ -547,7 +547,7 @@ void Display::selectShoppingList() {
     selectedList.loadFromDisk();
     selectedList.displayItems();
 }
-
+*/
 void Display::editShoppingList() {
    int choice;
     do {
@@ -617,7 +617,7 @@ void Display::calculateTotalPrice() {
     double totalPrice = currentShoppingList.calculateTotalPrice();
     cout << "Total Price: $" << totalPrice << endl;
 }
-
+/*
 void Display::saveShoppingList() {
     
     ofstream outFile("shopping_list.txt");
@@ -631,3 +631,4 @@ void Display::saveShoppingList() {
     }
 }
 
+*/

@@ -15,10 +15,11 @@ public:
     bool removeItem(const string& itemName);
     void displayItems() const;
     double calculateTotalPrice() const;
-    void saveToFile(ofstream& outFile) const;
-    void loadFromDisk();
     static vector<string> getSavedShoppingLists(); // Static function to get saved shopping lists
-
+    void addToShoppingList();
+    void removeFromShoppingList();
+    void displayShoppingList();
+    void editShoppingList();
 private:
     struct ShoppingItem {
         string name;
@@ -26,9 +27,8 @@ private:
         double price;
         
     };
-
-    vector<ShoppingItem> items;
-    static vector<string> savedShoppingLists; 
+private:
+    std::vector<ShoppingItem> items;
 };
 
 #endif

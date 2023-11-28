@@ -5,8 +5,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/glist.dir/code/catalog.cpp.o.d"
   "CMakeFiles/glist.dir/code/coupon.cpp.o"
   "CMakeFiles/glist.dir/code/coupon.cpp.o.d"
-  "CMakeFiles/glist.dir/code/display.cpp.o"
-  "CMakeFiles/glist.dir/code/display.cpp.o.d"
   "CMakeFiles/glist.dir/code/food.cpp.o"
   "CMakeFiles/glist.dir/code/food.cpp.o.d"
   "CMakeFiles/glist.dir/code/login.cpp.o"
