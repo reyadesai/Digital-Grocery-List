@@ -7,8 +7,6 @@
 
 using namespace std;
 
-vector<string> ShoppingList::savedShoppingLists; // Define the static member variable
-
 ShoppingList::ShoppingList() : items() {
     // Initialize an empty shopping list
 }
@@ -61,33 +59,66 @@ double ShoppingList::calculateTotalPrice() const {
     }
     return totalPrice;
 }
+void ShoppingList::addToShoppingList() {
 
-void ShoppingList::saveToFile(ofstream& outFile) const {
-    for (const ShoppingItem& item : items) {
-        outFile << item.name << " " << item.quantity << " " << item.price << endl;
-    }
+
+    cout << "Add an Item to the Shopping List:" << endl;
+
+    string itemName;
+    int quantity;
+    double price;
+
+    cout << "Enter item name: ";
+    cin >> itemName;
+    cout << "Enter quantity: ";
+    cin >> quantity;
+    cout << "Enter price: ";
+    cin >> price;
+
+    addItem(itemName, quantity, price);
+    cout << "Item added to the list." << endl;
+
 }
 
-void ShoppingList::loadFromDisk() {
-   ifstream inputFile("shopping_list.txt");
-    if (inputFile.is_open()) {
-        string line;
-        while (getline(inputFile, line)) {
-            istringstream iss(line);
-            string itemName;
-            int quantity;
-            double price;
-            if (iss >> itemName >> quantity >> price) {
-                addItem(itemName, quantity, price);
-            }
+void ShoppingList::displayShoppingList() {
+    cout << "Shopping List:" << endl;
+    displayItems();
+}
+
+void ShoppingList::removeFromShoppingList() {
+    
+    // Allow the user to remove an item from the list
+    string itemName;
+
+    cout << "Enter item name to remove: ";
+    cin >> itemName;
+
+    if (removeItem(itemName)) {
+        cout << "Item removed from the list." << endl;
+    } 
+    else {
+        cout << "Item not found in the list." << endl;
+    }
+    
+}
+
+void ShoppingList::editShoppingList() {
+    string itemName;
+    int newQuantity;
+
+    cout << "Enter item name to edit: ";
+    cin >> itemName;
+    cout << "Enter new quantity: ";
+    cin >> newQuantity;
+
+
+    if (editItem(itemName, newQuantity)) {
+        if(newQuantity == 0) {
+            removeItem(itemName);
         }
-
-        inputFile.close();
-    } else {
-        cerr << "Error: Could not open shopping_list.txt" << endl;
+        cout << "Item updated successfully." << endl;
+    } 
+    else {
+        cout << "Item not found in the list." << endl;
     }
-}
-vector<string> ShoppingList::getSavedShoppingLists() {
-    // Return the list of saved shopping list names
-    return savedShoppingLists;
 }

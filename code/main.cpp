@@ -6,6 +6,7 @@
 #include "userProfile.h"
 #include "allergen.h"
 #include "login.h"
+#include "shoppingList.h"
 using namespace std;
 
 int main() {
@@ -114,12 +115,20 @@ int option;
     6.
     New List:
 */
+string whiteName;
+string listName;
+cout << "Enter Name of List: "; 
+getline(cin, whiteName);
+cout << endl;
+getline(cin, listName);
+ShoppingList testList(listName);
 cout << "Catalog: " << endl;
 cout << "---------" << endl;
 
 for(unsigned i = 0; i < 32; i++) {
     cout << i << ". " << testBase[i].getName() << endl;
 }
+cout << endl;
 /*
     6.1
     Browse Catalog:
@@ -128,7 +137,51 @@ for(unsigned i = 0; i < 32; i++) {
         ->Price
         ->etc.
 */
+ShoppingList TestList;
+int input;
+do {
+    cout << "Options: " << endl;
+    cout << "1. Browse Catalog" << endl;
+    cout << "2. Add to Basket" << endl;
+    cout << "3. Remove from Basket" << endl;
+    cout << "4. Edit Quantity" << endl;
+    cout << "5. View Basket" << endl;
+    cout << "6. Checkout" << endl;
+    cout << "7. Quit " << endl;
+    cout << "Enter your choice: ";
+    cin >> input;
+    cout << endl;
+    if(input == 1) {
+        for(unsigned i = 0; i < 32; i++) {
+        cout << i << ". " << testBase[i].getName() << endl;
+        }
+    cout << endl;
+    }
+    if(input == 2) {
+        //need to add check allergens
+        TestList.addToShoppingList();
+        cout << endl;
+    }
+    if(input == 3) {
+        TestList.removeFromShoppingList();
+        cout << endl;
+    }
+    if(input == 4) {
+        TestList.editShoppingList();
+        cout << endl;
+    }
+    if(input == 5) {
+        TestList.displayShoppingList();
+        cout << endl;
+    }
+    if(input == 7) {
+        return 0;
+    }
 
+}while(input != 6);
+int basePrice = TestList.calculateTotalPrice();
+double tax = TestList.calculateTotalPrice() * .08;
+cout << "Total: " << basePrice << " + " << tax << " = " << basePrice + tax << endl;
 /*
     6.2
     Add from Catalog:
@@ -169,96 +222,7 @@ for(unsigned i = 0; i < 32; i++) {
     cout << "Catalog:" << endl;
 
    
-    UserProfile userProfile("User1"); 
-
-    char userInput;
-    
- vector<Coupon> coupons;
-    do {
-
-        for (int i = 0; i < 35; ++i) {
-            // Use fixed and setprecision to display prices with two decimal places
-            cout << testBase[i].getName() << " - $" << fixed << setprecision(2) << testBase[i].getPrice() << endl;
-        }
-       
-
-        // Get coupon information from the user
-        string couponName;
-        double couponDiscount;
-        string couponExpirationDate;
-
-        cout << "Enter coupon information:" << endl;
-        cout << "Coupon Name: " << endl;
-        cout << endl;
-     
-        getline(cin, couponName);
-     
-cout << couponName;
-        cout << "Discount Percentage: ";
-        cin >> couponDiscount;
-        cin.ignore();
-        cout << "Expiration Date (YYYY-MM-DD): ";
-        cin >> couponExpirationDate;
-        cin.ignore();
-        // Create a coupon
-        Coupon coupon(couponName, couponDiscount, couponExpirationDate);
-
-        // Save the coupon in the vector
-        coupons.push_back(coupon);
-
-        // Display coupon information
-        cout << "\nCoupon Information:" << endl;
-        cout << "Name: " << coupon.getName() << endl;
-        cout << "Discount: " << coupon.getDiscount() << "%" << endl;
-        cout << "Expiration Date: " << coupon.getExpirationDate() << endl;
-
-        // Add the coupon to the user's profile
-        userProfile.addCoupon(coupon);
-
-        // Get the item the user wants to apply the coupon to
-        cout << "Enter the name of the item to apply the coupon to: " << endl;
-   
-        string itemName;
-        getline(cin, itemName);
-
-        // Find the item in the catalog
-        int itemIndex = -1;
-        for (int i = 0; i < 35; ++i) {
-            if (testBase[i].getName() == itemName) {
-                itemIndex = i;
-                break;
-            }
-        }
-
-        // Apply the coupon to the specified item
-        if (itemIndex != -1) {
-            double discountAmount = coupon.getDiscount() / 100.0;
-            double discountedPrice = (testBase[itemIndex].getPrice()) - (testBase[itemIndex].getPrice() * (discountAmount));
-
-            // Update the price for the specified item
-            testBase[itemIndex].setPrice(discountedPrice);
-
-            // Display the updated catalog
-            cout << "Updated Catalog:" << endl;
-            for (int i = 0; i < 35; ++i) {
-                cout << testBase[i].getName() << " - $" << fixed << setprecision(2) << testBase[i].getPrice() << endl;
-            }
-        } else {
-            cout << "Item not found in the catalog." << endl;
-        }
-
-        cout << "Do you want to add another coupon? (Enter 'y' or 'Y' to continue): " << endl;
-        cin >> userInput;
-        cin.ignore();
-    } while (userInput == 'y' || userInput == 'Y');
-
-    // Display all user's coupons before exiting
-    vector<Coupon> userCoupons = userProfile.getCoupons();
-    cout << "All User Coupons:" << endl;
-    for (const auto& coupon : userCoupons) {
-        cout << "Name: " << coupon.getName() << ", Discount: " << coupon.getDiscount() << "%, Expiration Date: " << coupon.getExpirationDate() << endl;
-    }
-
+  
     // Clean up the allocated memory for the catalog
     delete[] testBase;
 /*
