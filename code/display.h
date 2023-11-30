@@ -7,6 +7,7 @@
 #include "shoppingList.h"
 #include "coupon.h"
 #include "allergen.h"
+#include "catalog.h"
 #include "userProfile.h"
 
 using namespace std;
@@ -33,6 +34,7 @@ public:
     void saveAllergens();
     void saveCoupons();
     void saveShoppingList();
+
     
 
 private:

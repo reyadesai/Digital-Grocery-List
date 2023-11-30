@@ -17,7 +17,7 @@ Display::Display() {
     userAllergens = {Allergen("Allergen1"), Allergen("Allergen2")};
     userCoupons = {Coupon(string("Coupon1"), 0.1), Coupon(string("Coupon2"), 0.2)};
     ShoppingList selectedList;
-    selectedList.loadFromDisk();
+    //selectedList.loadFromDisk();
 
     selectedStore = "";
     currentShoppingList = ShoppingList(); // Initializes an empty shopping list
@@ -292,10 +292,6 @@ void Display::createList() {
         }
     } while (choice != 2);
 }
-
-
-
-
 void Display::editList() {
     int choice;
     do {
@@ -371,7 +367,7 @@ void Display::exit() {
 }
 
 
-    void Display::showProfileData() {
+void Display::showProfileData() {
     // Display user's profile details
     for (const UserProfile& profile : userProfiles) {
         cout << "User Profile: " << profile.getName() << endl;
@@ -439,7 +435,6 @@ void Display::editProfileData() {
             auto it = find_if(userProfiles.begin(), userProfiles.end(), [&profileName](const UserProfile& profile) {
                 return profile.getName() == profileName;
             });
-
             if (it != userProfiles.end()) {
                 userProfiles.erase(it);
                 cout << "Profile removed successfully." << endl;
@@ -540,7 +535,7 @@ void Display::showSavedLists() {
         cout << listName << endl;
     }
 }
-
+/*
 void Display::selectShoppingList() {
     // allow the user to select a saved shopping list
     cout << "Enter the name of the shopping list you want to select: ";
@@ -552,7 +547,7 @@ void Display::selectShoppingList() {
     selectedList.loadFromDisk();
     selectedList.displayItems();
 }
-
+*/
 void Display::editShoppingList() {
    int choice;
     do {
@@ -622,7 +617,7 @@ void Display::calculateTotalPrice() {
     double totalPrice = currentShoppingList.calculateTotalPrice();
     cout << "Total Price: $" << totalPrice << endl;
 }
-
+/*
 void Display::saveShoppingList() {
     
     ofstream outFile("shopping_list.txt");
@@ -636,3 +631,4 @@ void Display::saveShoppingList() {
     }
 }
 
+*/

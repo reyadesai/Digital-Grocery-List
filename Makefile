@@ -201,30 +201,6 @@ code/coupon.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/coupon.cpp.s
 .PHONY : code/coupon.cpp.s
 
-code/display.o: code/display.cpp.o
-.PHONY : code/display.o
-
-# target to build an object file
-code/display.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/display.cpp.o
-.PHONY : code/display.cpp.o
-
-code/display.i: code/display.cpp.i
-.PHONY : code/display.i
-
-# target to preprocess a source file
-code/display.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/display.cpp.i
-.PHONY : code/display.cpp.i
-
-code/display.s: code/display.cpp.s
-.PHONY : code/display.s
-
-# target to generate assembly for a file
-code/display.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/display.cpp.s
-.PHONY : code/display.cpp.s
-
 code/food.o: code/food.cpp.o
 .PHONY : code/food.o
 
@@ -248,6 +224,30 @@ code/food.s: code/food.cpp.s
 code/food.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/food.cpp.s
 .PHONY : code/food.cpp.s
+
+code/login.o: code/login.cpp.o
+.PHONY : code/login.o
+
+# target to build an object file
+code/login.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.o
+.PHONY : code/login.cpp.o
+
+code/login.i: code/login.cpp.i
+.PHONY : code/login.i
+
+# target to preprocess a source file
+code/login.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.i
+.PHONY : code/login.cpp.i
+
+code/login.s: code/login.cpp.s
+.PHONY : code/login.s
+
+# target to generate assembly for a file
+code/login.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/login.cpp.s
+.PHONY : code/login.cpp.s
 
 code/main.o: code/main.cpp.o
 .PHONY : code/main.o
@@ -339,12 +339,12 @@ help:
 	@echo "... code/coupon.o"
 	@echo "... code/coupon.i"
 	@echo "... code/coupon.s"
-	@echo "... code/display.o"
-	@echo "... code/display.i"
-	@echo "... code/display.s"
 	@echo "... code/food.o"
 	@echo "... code/food.i"
 	@echo "... code/food.s"
+	@echo "... code/login.o"
+	@echo "... code/login.i"
+	@echo "... code/login.s"
 	@echo "... code/main.o"
 	@echo "... code/main.i"
 	@echo "... code/main.s"

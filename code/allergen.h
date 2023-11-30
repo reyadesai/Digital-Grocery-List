@@ -14,6 +14,7 @@ public:
 
     // Setter for allergen name
     void setName(const string& name);
+    
 
 private:
     string name;

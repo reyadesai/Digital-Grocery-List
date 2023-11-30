@@ -22,13 +22,13 @@ void Browse::showCatalog(){
         int arraySize = 35;
         if(userInput ==1){
             for(int i =0; i< arraySize; i++){
-                cout<< counter<<". "<< dataBase.at[i]<<endl;
+                cout<< counter<<". "<< dataBase[i]<<endl;//
                 counter++;
             }
         }else if(userInput ==2){
-            for(int i =0; i< arraySize; i++){
+            for(int i =0; i< arraySize; i++){b
                 if(dataBase.at(i).getType()== "meat"){
-                    cout<< counter<<". "<< dataBase.at(i)<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;//change
                     counter++;
                 }else{
                     cout<< "End of meat items."<<endl;
@@ -37,7 +37,7 @@ void Browse::showCatalog(){
         }else if(userInput ==3){
             for(int i =0; i< arraySize; i++){
                 if(dataBase.at(i).getType()== "vegetable"){
-                    cout<< counter<<". "<< dataBase.at(i)<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
                 }else{
                     cout<< "End of vegetable items."<<endl;
@@ -46,7 +46,7 @@ void Browse::showCatalog(){
         }else if(userInput ==4){
             for(int i =0; i< arraySize; i++){
                 if(dataBase.at(i).getType()== "fruit"){
-                    cout<< counter<<". "<< dataBase.at(i)<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
                 }else{
                     cout<< "End of fruit items."<<endl;
@@ -64,7 +64,7 @@ void Browse::showCatalog(){
         }else if(userInput ==6){
             for(int i =0; i< arraySize; i++){
                 if(dataBase.at(i).getType()== "seasoning"){
-                    cout<< counter<<". "<< dataBase.at(i)<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
                 }else{
                     cout<< "End of seasoning items."<<endl;
@@ -73,7 +73,7 @@ void Browse::showCatalog(){
         }else if(userInput ==7){
             for(int i =0; i< arraySize; i++){
                 if(dataBase.at(i).getType()== "misc"){
-                    cout<< counter<<". "<< dataBase.at(i)<<endl;
+                    cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
                 }else{
                     cout<< "End of miscellaneous items."<<endl;
@@ -90,5 +90,13 @@ void Browse::showCatalog(){
             break; 
         }
     }
-    delete[] dataBase;
 }
+
+
+
+/* add friend funct to food in order to fix 
+It looks like you are encountering a compilation error related to the operator<< when trying to print a Food object using std::cout. The error message indicates that there is an issue with the template argument deduction.
+In your code, you are attempting to use std::cout << dataBase[i], where dataBase[i] is an instance of the Food class. To use the << operator with std::cout, you need to overload the << operator for the Food class.
+Here's an example of how you can overload the << operator for the Food class. You should include this definition in the Food class or define it as a friend function of the Food class:
+
+*/

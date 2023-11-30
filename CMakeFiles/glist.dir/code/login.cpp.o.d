@@ -1,8 +1,6 @@
-CMakeFiles/glist.dir/code/display.cpp.o: \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.cpp \
- /usr/include/stdc-predef.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.h \
- /usr/include/c++/8/iostream \
+CMakeFiles/glist.dir/code/login.cpp.o: \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.cpp \
+ /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/os_defines.h \
@@ -112,32 +110,5 @@ CMakeFiles/glist.dir/code/display.cpp.o: \
  /usr/include/c++/8/bits/locale_facets.tcc \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
- /usr/include/c++/8/bits/istream.tcc /usr/include/c++/8/vector \
- /usr/include/c++/8/bits/stl_construct.h \
- /usr/include/c++/8/bits/stl_uninitialized.h \
- /usr/include/c++/8/bits/stl_vector.h \
- /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
-<<<<<<< HEAD
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
-=======
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
->>>>>>> ab754058661456ba4974ae6fc20e459696426a4a
- /usr/include/c++/8/fstream /usr/include/c++/8/bits/codecvt.h \
- /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
- /usr/include/c++/8/x86_64-redhat-linux/bits/c++io.h \
- /usr/include/c++/8/bits/fstream.tcc /usr/include/c++/8/algorithm \
- /usr/include/c++/8/utility /usr/include/c++/8/bits/stl_relops.h \
- /usr/include/c++/8/bits/stl_algo.h \
- /usr/include/c++/8/bits/algorithmfwd.h \
- /usr/include/c++/8/bits/stl_heap.h /usr/include/c++/8/bits/stl_tempbuf.h \
- /usr/include/c++/8/bits/uniform_int_dist.h /usr/include/c++/8/limits
+ /usr/include/c++/8/bits/istream.tcc \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.h
