@@ -2,5 +2,12 @@ main
 glist
 cmake_install.cmake
 CMakeCache.txt
+CMakeFiles/glist.dir/DependInfo.cmake
+        CMakeFiles/glist.dir/build.make
+        CMakeFiles/glist.dir/code/display.cpp.o.d
+        CMakeFiles/glist.dir/code/main.cpp.o
+        CMakeFiles/glist.dir/code/main.cpp.o.d
+        CMakeFiles/glist.dir/code/userProfile.cpp.o.d
+        CMakeFiles/glist.dir/compiler_depend.internal
 
       

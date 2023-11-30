@@ -1,7 +1,7 @@
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp \
  /usr/include/stdc-predef.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
  /usr/include/c++/8/string \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
