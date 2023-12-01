@@ -59,6 +59,7 @@ double ShoppingList::calculateTotalPrice() const {
     }
     return totalPrice;
 }
+//
 void ShoppingList::addToShoppingList() {
 
 

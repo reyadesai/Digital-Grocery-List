@@ -100,12 +100,8 @@ CMakeFiles/glist.dir/code/userProfile.cpp.o: \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
-<<<<<<< HEAD
  /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
- /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h
-=======
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
  /usr/include/c++/8/iostream /usr/include/c++/8/ostream \
  /usr/include/c++/8/ios /usr/include/c++/8/bits/ios_base.h \
  /usr/include/c++/8/bits/locale_classes.h \
@@ -124,4 +120,3 @@ CMakeFiles/glist.dir/code/userProfile.cpp.o: \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
  /usr/include/c++/8/bits/istream.tcc
->>>>>>> ab754058661456ba4974ae6fc20e459696426a4a
