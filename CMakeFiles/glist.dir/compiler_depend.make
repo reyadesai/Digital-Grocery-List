@@ -1123,6 +1123,9 @@ CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp \
   /usr/include/c++/8/bits/stl_vector.h \
   /usr/include/c++/8/bits/stl_bvector.h \
   /usr/include/c++/8/bits/vector.tcc \
+  code/userProfile.h \
+  code/coupon.h \
+  code/allergen.h \
   /usr/include/c++/8/iostream \
   /usr/include/c++/8/ostream \
   /usr/include/c++/8/ios \

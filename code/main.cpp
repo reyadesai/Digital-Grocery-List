@@ -159,7 +159,7 @@ do {
     }
     if(input == 2) {
         //need to add check allergens
-        TestList.addToShoppingList();
+        TestList.addToShoppingList(Gency);
         cout << endl;
     }
     if(input == 3) {
