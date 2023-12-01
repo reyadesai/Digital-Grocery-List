@@ -1,7 +1,7 @@
 CMakeFiles/glist.dir/code/display.cpp.o: \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.cpp \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.cpp \
  /usr/include/stdc-predef.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/display.h \
  /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -117,12 +117,21 @@ CMakeFiles/glist.dir/code/display.cpp.o: \
  /usr/include/c++/8/bits/stl_uninitialized.h \
  /usr/include/c++/8/bits/stl_vector.h \
  /usr/include/c++/8/bits/stl_bvector.h /usr/include/c++/8/bits/vector.tcc \
+<<<<<<< HEAD
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
+=======
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
+>>>>>>> ab754058661456ba4974ae6fc20e459696426a4a
  /usr/include/c++/8/fstream /usr/include/c++/8/bits/codecvt.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/basic_file.h \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++io.h \

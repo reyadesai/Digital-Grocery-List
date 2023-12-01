@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088
+CMAKE_SOURCE_DIR = /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088
+CMAKE_BINARY_DIR = /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/glist.dir/clean
 CMakeFiles/glist.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target glist"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9 "Built target glist"
 .PHONY : CMakeFiles/glist.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/glist.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/glist.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles 0
 .PHONY : CMakeFiles/glist.dir/rule
 
 # Convenience name for target.
