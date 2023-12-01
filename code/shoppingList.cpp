@@ -4,7 +4,7 @@
 #include <vector>
 #include <string>
 #include <sstream> 
-
+#include "coupon.h"
 using namespace std;
 
 ShoppingList::ShoppingList() : items() {
@@ -122,4 +122,15 @@ void ShoppingList::editShoppingList() {
     else {
         cout << "Item not found in the list." << endl;
     }
+}
+double ShoppingList::applyCoupons(const std::vector<Coupon>& userCoupons) {
+    double totalDiscount = 0.0;
+
+    for (const Coupon& coupon : userCoupons) {
+        // Apply the discount directly without checking applicability
+        totalDiscount += coupon.getDiscount();
+    }
+
+    // Apply the total discount to the shopping list total price
+    return totalDiscount;
 }

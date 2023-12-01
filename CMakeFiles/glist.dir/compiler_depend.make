@@ -977,6 +977,7 @@ CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp \
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp \
   /usr/include/stdc-predef.h \
   code/shoppingList.h \
+  code/coupon.h \
   /usr/include/c++/8/string \
   /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
   /usr/include/bits/wordsize.h \

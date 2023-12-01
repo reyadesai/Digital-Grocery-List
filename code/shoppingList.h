@@ -1,6 +1,6 @@
 #ifndef SHOPPINGLIST_H
 #define SHOPPINGLIST_H
-
+#include "coupon.h"
 #include <string>
 #include <vector>
 
@@ -20,6 +20,7 @@ public:
     void removeFromShoppingList();
     void displayShoppingList();
     void editShoppingList();
+    double applyCoupons(const std::vector<Coupon>& userCoupons);
 private:
     struct ShoppingItem {
         string name;

@@ -2,6 +2,7 @@ CMakeFiles/glist.dir/code/shoppingList.cpp.o: \
  /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp \
  /usr/include/stdc-predef.h \
  /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
+ /home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
  /usr/include/c++/8/string \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \

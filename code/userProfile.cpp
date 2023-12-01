@@ -133,7 +133,7 @@ void UserProfile::editCoupons() {
                 cout << "Enter the discount percentage (ex. 10.0 for 10%): ";
                 cin >> discount;
                 cout << endl;
-                userCoupons.push_back(Coupon(string(couponName), discount / 100.0));
+                userCoupons.push_back(Coupon(string(couponName), discount));
 
                 cout << "Coupon added successfully." << endl << endl;
             } 

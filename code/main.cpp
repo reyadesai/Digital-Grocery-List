@@ -157,11 +157,13 @@ do {
         }
     cout << endl;
     }
+    // Inside the loop where you add items to the shopping list (in main.cpp)
     if(input == 2) {
         //need to add check allergens
         TestList.addToShoppingList();
         cout << endl;
     }
+
     if(input == 3) {
         TestList.removeFromShoppingList();
         cout << endl;
@@ -179,9 +181,14 @@ do {
     }
 
 }while(input != 6);
+//TestList.applyCoupons(Gency.getCoupons()); // Apply user's coupons
 int basePrice = TestList.calculateTotalPrice();
 double tax = TestList.calculateTotalPrice() * .08;
-cout << "Total: " << basePrice << " + " << tax << " = " << basePrice + tax << endl;
+double disc = TestList.applyCoupons(Gency.getCoupons());
+cout << "Disc: " << disc << endl;
+cout << "Total: " << basePrice << " + " << tax << " = " << basePrice - (basePrice * disc/100) + tax << endl;
+return 0;
+}
 /*
     6.2
     Add from Catalog:
@@ -234,8 +241,7 @@ cout << "Total: " << basePrice << " + " << tax << " = " << basePrice + tax << en
     Back To New Lists and start all over
     loop it and quit with q
 */
-return 0;
-}
+
 
 
     
