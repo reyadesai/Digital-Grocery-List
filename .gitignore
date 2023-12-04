@@ -3,6 +3,7 @@ glist
 cmake_install.cmake
 CMakeCache.txt
 
+
  CMakeFiles/glist.dir/DependInfo.cmake
         CMakeFiles/glist.dir/build.make
         CMakeFiles/glist.dir/code/display.cpp.o.d
@@ -12,3 +13,10 @@ CMakeCache.txt
         CMakeFiles/glist.dir/compiler_depend.internal
 
       
+
+CMakeFiles/CMakeOutput.log
+CMakeFiles/TargetDirectories.txt
+CMakeFiles/glist.dir/build.make
+CMakeFiles/glist.dir/code/main.cpp.o
+CMakeFiles/glist.dir/code/shoppingList.cpp.o
+

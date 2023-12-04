@@ -407,6 +407,7 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+<<<<<<< HEAD
 The system is: Linux - 4.18.0-518.el8.x86_64 - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: /usr/bin/cc 
@@ -816,3 +817,33 @@ Parsed CXX implicit link information from above output:
   implicit fwks: []
 
 
+=======
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_603f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_603f4.dir/build.make CMakeFiles/cmTC_603f4.dir/build
+gmake[1]: Entering directory '/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_603f4.dir/CheckIncludeFile.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_603f4.dir/CheckIncludeFile.c.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_603f4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_603f4.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_603f4.dir/CheckIncludeFile.c.o -o cmTC_603f4 
+gmake[1]: Leaving directory '/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_19c0d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_19c0d.dir/build.make CMakeFiles/cmTC_19c0d.dir/build
+gmake[1]: Entering directory '/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19c0d.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_19c0d.dir/CheckFunctionExists.c.o -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_19c0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19c0d.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_19c0d.dir/CheckFunctionExists.c.o -o cmTC_19c0d  -lpthread 
+gmake[1]: Leaving directory '/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/CMakeTmp'
+
+
+
+>>>>>>> bh/allint

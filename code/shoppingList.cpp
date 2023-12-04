@@ -59,7 +59,6 @@ double ShoppingList::calculateTotalPrice() const {
     }
     return totalPrice;
 }
-//
 void ShoppingList::addToShoppingList() {
 
 
@@ -79,13 +78,19 @@ void ShoppingList::addToShoppingList() {
     addItem(itemName, quantity, price);
     cout << "Item added to the list." << endl;
 
+    for(unsigned i = 0; i < (inProf.getAllergens()).size(); i++) {
+        if(itemName == ((inProf.getAllergens()).at(i)).getName()) {
+            cout << "Warning, you'll die Gency, dont do it ur allergic" << endl;
+        }
+    }
+
 }
 
 void ShoppingList::displayShoppingList() {
     cout << "Shopping List:" << endl;
     displayItems();
 }
-
+w
 void ShoppingList::removeFromShoppingList() {
     
     // Allow the user to remove an item from the list
