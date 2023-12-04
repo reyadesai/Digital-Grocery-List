@@ -159,7 +159,7 @@ do {
     }
     // Inside the loop where you add items to the shopping list (in main.cpp)
     if(input == 2) {
-        //need to add check allergens
+        //need to add check allergens`
         TestList.addToShoppingList(Gency);
         cout << endl;
     }

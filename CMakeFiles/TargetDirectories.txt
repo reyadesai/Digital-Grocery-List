@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-/home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/rebuild_cache.dir
-/home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/glist.dir
-/home/csmajs/ssuva003/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/edit_cache.dir
-=======
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/install/strip.dir
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/install/local.dir
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles/test.dir
@@ -33,4 +28,3 @@
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/CMakeFiles/gtest.dir
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/CMakeFiles/rebuild_cache.dir
 /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/CMakeFiles/install.dir
->>>>>>> bh/allint

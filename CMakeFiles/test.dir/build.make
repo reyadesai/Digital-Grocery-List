@@ -97,23 +97,119 @@ CMakeFiles/test.dir/code/allergen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/allergen.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.cpp -o CMakeFiles/test.dir/code/allergen.cpp.s
 
+CMakeFiles/test.dir/code/userProfile.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/userProfile.cpp.o: code/userProfile.cpp
+CMakeFiles/test.dir/code/userProfile.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/test.dir/code/userProfile.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/userProfile.cpp.o -MF CMakeFiles/test.dir/code/userProfile.cpp.o.d -o CMakeFiles/test.dir/code/userProfile.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.cpp
+
+CMakeFiles/test.dir/code/userProfile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/userProfile.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.cpp > CMakeFiles/test.dir/code/userProfile.cpp.i
+
+CMakeFiles/test.dir/code/userProfile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/userProfile.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.cpp -o CMakeFiles/test.dir/code/userProfile.cpp.s
+
+CMakeFiles/test.dir/code/shoppingList.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/shoppingList.cpp.o: code/shoppingList.cpp
+CMakeFiles/test.dir/code/shoppingList.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/test.dir/code/shoppingList.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/shoppingList.cpp.o -MF CMakeFiles/test.dir/code/shoppingList.cpp.o.d -o CMakeFiles/test.dir/code/shoppingList.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp
+
+CMakeFiles/test.dir/code/shoppingList.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/shoppingList.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp > CMakeFiles/test.dir/code/shoppingList.cpp.i
+
+CMakeFiles/test.dir/code/shoppingList.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/shoppingList.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp -o CMakeFiles/test.dir/code/shoppingList.cpp.s
+
+CMakeFiles/test.dir/code/food.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/food.cpp.o: code/food.cpp
+CMakeFiles/test.dir/code/food.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/test.dir/code/food.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/food.cpp.o -MF CMakeFiles/test.dir/code/food.cpp.o.d -o CMakeFiles/test.dir/code/food.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp
+
+CMakeFiles/test.dir/code/food.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/food.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp > CMakeFiles/test.dir/code/food.cpp.i
+
+CMakeFiles/test.dir/code/food.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/food.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp -o CMakeFiles/test.dir/code/food.cpp.s
+
+CMakeFiles/test.dir/code/coupon.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/coupon.cpp.o: code/coupon.cpp
+CMakeFiles/test.dir/code/coupon.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/test.dir/code/coupon.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/coupon.cpp.o -MF CMakeFiles/test.dir/code/coupon.cpp.o.d -o CMakeFiles/test.dir/code/coupon.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.cpp
+
+CMakeFiles/test.dir/code/coupon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/coupon.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.cpp > CMakeFiles/test.dir/code/coupon.cpp.i
+
+CMakeFiles/test.dir/code/coupon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/coupon.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.cpp -o CMakeFiles/test.dir/code/coupon.cpp.s
+
+CMakeFiles/test.dir/code/catalog.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/catalog.cpp.o: code/catalog.cpp
+CMakeFiles/test.dir/code/catalog.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/test.dir/code/catalog.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/catalog.cpp.o -MF CMakeFiles/test.dir/code/catalog.cpp.o.d -o CMakeFiles/test.dir/code/catalog.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.cpp
+
+CMakeFiles/test.dir/code/catalog.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/catalog.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.cpp > CMakeFiles/test.dir/code/catalog.cpp.i
+
+CMakeFiles/test.dir/code/catalog.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/catalog.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.cpp -o CMakeFiles/test.dir/code/catalog.cpp.s
+
+CMakeFiles/test.dir/code/login.cpp.o: CMakeFiles/test.dir/flags.make
+CMakeFiles/test.dir/code/login.cpp.o: code/login.cpp
+CMakeFiles/test.dir/code/login.cpp.o: CMakeFiles/test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/test.dir/code/login.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/test.dir/code/login.cpp.o -MF CMakeFiles/test.dir/code/login.cpp.o.d -o CMakeFiles/test.dir/code/login.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.cpp
+
+CMakeFiles/test.dir/code/login.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/test.dir/code/login.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.cpp > CMakeFiles/test.dir/code/login.cpp.i
+
+CMakeFiles/test.dir/code/login.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/test.dir/code/login.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.cpp -o CMakeFiles/test.dir/code/login.cpp.s
+
 # Object files for target test
 test_OBJECTS = \
 "CMakeFiles/test.dir/test.cpp.o" \
-"CMakeFiles/test.dir/code/allergen.cpp.o"
+"CMakeFiles/test.dir/code/allergen.cpp.o" \
+"CMakeFiles/test.dir/code/userProfile.cpp.o" \
+"CMakeFiles/test.dir/code/shoppingList.cpp.o" \
+"CMakeFiles/test.dir/code/food.cpp.o" \
+"CMakeFiles/test.dir/code/coupon.cpp.o" \
+"CMakeFiles/test.dir/code/catalog.cpp.o" \
+"CMakeFiles/test.dir/code/login.cpp.o"
 
 # External object files for target test
 test_EXTERNAL_OBJECTS =
 
 bin/test: CMakeFiles/test.dir/test.cpp.o
 bin/test: CMakeFiles/test.dir/code/allergen.cpp.o
+bin/test: CMakeFiles/test.dir/code/userProfile.cpp.o
+bin/test: CMakeFiles/test.dir/code/shoppingList.cpp.o
+bin/test: CMakeFiles/test.dir/code/food.cpp.o
+bin/test: CMakeFiles/test.dir/code/coupon.cpp.o
+bin/test: CMakeFiles/test.dir/code/catalog.cpp.o
+bin/test: CMakeFiles/test.dir/code/login.cpp.o
 bin/test: CMakeFiles/test.dir/build.make
 bin/test: lib/libgmock.a
 bin/test: lib/libgtest.a
 bin/test: lib/libgtest_main.a
 bin/test: lib/libgtest.a
 bin/test: CMakeFiles/test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable bin/test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable bin/test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

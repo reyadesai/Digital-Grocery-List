@@ -59,7 +59,7 @@ double ShoppingList::calculateTotalPrice() const {
     }
     return totalPrice;
 }
-void ShoppingList::addToShoppingList() {
+void ShoppingList::addToShoppingList(UserProfile inProf) {
 
 
     cout << "Add an Item to the Shopping List:" << endl;
@@ -90,7 +90,7 @@ void ShoppingList::displayShoppingList() {
     cout << "Shopping List:" << endl;
     displayItems();
 }
-w
+
 void ShoppingList::removeFromShoppingList() {
     
     // Allow the user to remove an item from the list

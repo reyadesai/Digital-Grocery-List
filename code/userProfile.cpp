@@ -103,7 +103,7 @@ void UserProfile::editAllergens() {
 
 void UserProfile::showCoupons() {
     for(unsigned i = 0; i < userCoupons.size(); i++) {
-        cout << "Name: "<< (userCoupons.at(i)).getName() << "Discount: -" << (userCoupons.at(i)).getDiscount() << "%" << endl; 
+        cout << "Name: "<< (userCoupons.at(i)).getName() << " Discount: -" << (userCoupons.at(i)).getDiscount() << "%" << endl; 
     }
     cout << endl;
 }

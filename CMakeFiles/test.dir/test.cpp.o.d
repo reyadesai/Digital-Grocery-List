@@ -201,4 +201,8 @@ CMakeFiles/test.dir/test.cpp.o: \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/include/gtest/gtest-typed-test.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/include/gtest/gtest_pred_impl.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest/googletest/include/gtest/gtest_prod.h \
- /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h

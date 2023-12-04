@@ -1,4 +1,4 @@
-CMakeFiles/glist.dir/code/coupon.cpp.o: \
+CMakeFiles/test.dir/code/coupon.cpp.o: \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.cpp \
  /usr/include/stdc-predef.h \
  /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
