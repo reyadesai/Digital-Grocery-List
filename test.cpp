@@ -4,5 +4,7 @@ using namespace std;
 
 TEST(AllergensTest, testName) {
     Allergen beef("Beef");
-    EXPECT_EQ("Beef", "Beef");
+    EXPECT_EQ(beef.getName(), "Beef");
 }
+
+

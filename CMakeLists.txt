@@ -18,6 +18,15 @@ ADD_EXECUTABLE(glist
 ADD_EXECUTABLE(test
 test.cpp
 code/allergen.cpp
+code/allergen.cpp
+# code/browse.cpp
+code/userProfile.cpp
+code/shoppingList.cpp
+code/food.cpp
+code/coupon.cpp
+code/catalog.cpp
+code/main.cpp
+code/login.cpp
 )
 
 target_link_libraries(test gmock gtest gtest_main)
