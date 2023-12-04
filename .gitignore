@@ -2,3 +2,8 @@ main
 glist
 cmake_install.cmake
 CMakeCache.txt
+CMakeFiles/CMakeOutput.log
+CMakeFiles/TargetDirectories.txt
+CMakeFiles/glist.dir/build.make
+CMakeFiles/glist.dir/code/main.cpp.o
+CMakeFiles/glist.dir/code/shoppingList.cpp.o
