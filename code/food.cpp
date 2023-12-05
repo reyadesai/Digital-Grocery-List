@@ -62,3 +62,8 @@ void Food:: setPrice(double newPrice){
     price = newPrice;
 }
 
+ostream& operator<<(std::ostream& os, const Food& food) {
+    os << "Name: " << food.name << ", Type: " << food.type << ", ID: " << food.id << ", QTY: " << food.qty << ", Price: " << food.price;
+    return os;
+}
+
