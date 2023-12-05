@@ -24,14 +24,15 @@ void Browse::showCatalog(){
         int userInput;
         cin>>userInput;
         int counter =1;
-        int arraySize = 35;
+        int arraySize = 33;
         if(userInput ==1){
             cout<< "All items"<<endl;
             for(int i =0; i< arraySize; i++){
                 cout<< counter<<". "<< dataBase[i]<<endl;//
                 counter++;
             }
-        }else if(userInput ==2){
+        }
+        else if(userInput ==2){
             cout<< "Meats"<<endl;
             sort(dataBase, dataBase + arraySize, [](const Food& a, const Food& b) {
                 return a.getName() < b.getName();
@@ -40,11 +41,13 @@ void Browse::showCatalog(){
                 if(dataBase[i].getType()== "meat"){
                     cout<< counter<<". "<< dataBase[i]<<endl;//change
                     counter++;
-                }else{
+                }
+                else{
                     continue;
                 }
             }
-        }else if(userInput ==3){
+        }
+        else if(userInput ==3){
             cout<< "Vegetables"<<endl;
             //bool foundVegetable = false;//veg or no :3
             sort(dataBase, dataBase + arraySize, [](const Food& a, const Food& b) {
@@ -55,7 +58,8 @@ void Browse::showCatalog(){
                     cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
                     //foundVegetable = true;
-                }else{
+                }
+                else{
                     continue;
                 }
                 /*if(!foundVegetable){
@@ -71,7 +75,8 @@ void Browse::showCatalog(){
                 if(dataBase[i].getType()== "fruit"){
                     cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
-                }else{
+                }
+                else{
                     continue;
                 }
             }
@@ -84,7 +89,8 @@ void Browse::showCatalog(){
                 if(dataBase[i].getType()== "dairy"){
                     cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
-                }else{
+                }
+                else{
                     continue;
                 }
             }
@@ -97,7 +103,8 @@ void Browse::showCatalog(){
                 if(dataBase[i].getType()== "seasoning"){
                     cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
-                }else{
+                }
+                else{
                     continue;
                 }
             }
@@ -110,7 +117,8 @@ void Browse::showCatalog(){
                 if(dataBase[i].getType()== "misc"){
                     cout<< counter<<". "<< dataBase[i]<<endl;
                     counter++;
-                }else{
+                }
+                else{
                     continue;
                 }
             }
