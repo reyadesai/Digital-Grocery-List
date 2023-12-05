@@ -1,5 +1,6 @@
 #ifndef FOOD_H
 #define FOOD_H
+#include <iostream>
 
 using namespace std;
 
@@ -37,8 +38,7 @@ class Food {
         //need to add safeguards: can't input negative value
         void reduceQTY(int change);
         void setPrice(double newPrice);
-
-
+        friend ostream& operator<<(std::ostream& os, const Food& food);
 };
 
 #endif

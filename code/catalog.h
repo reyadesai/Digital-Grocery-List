@@ -3,7 +3,7 @@
 
 #include "food.h"
 
-class catalog : Food {
+class catalog {
 public:
     static Food* generateCatalog();
 };
