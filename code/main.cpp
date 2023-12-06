@@ -2,7 +2,6 @@
 #include <string>
 #include "food.h"
 #include "catalog.h"
-//#include "display.h"
 #include "userProfile.h"
 #include "allergen.h"
 #include "login.h"
@@ -18,20 +17,8 @@ int main() {
     Gency.addCoupon(Special);
     login test;
 
-    
-/*
-    0.
-    Prereqs:
-    Constructors
-    //display
-
-*/
     cout << "Welcome to the Grocery Shopping App!" << endl << endl;
-/*
-    1.
-    Welcome msg
-*/
-    //asks for username and doesn't let you pass until u get it right
+
     int key;
     do {
         key = test.userLogin();
@@ -59,7 +46,6 @@ int option;
         }
         if(option == 2) {
             cout << "Current Coupons" << endl;
-            //get help on getname
             Gency.showCoupons();
             Gency.editCoupons();
         }
@@ -107,7 +93,6 @@ do {
     }
     // Inside the loop where you add items to the shopping list (in main.cpp)
     if(input == 2) {
-        //need to add check allergens`
         TestList.addToShoppingList(Gency);
         cout << endl;
     }
