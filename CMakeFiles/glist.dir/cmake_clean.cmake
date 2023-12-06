@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/glist.dir/code/allergen.cpp.o"
   "CMakeFiles/glist.dir/code/allergen.cpp.o.d"
+  "CMakeFiles/glist.dir/code/browse.cpp.o"
+  "CMakeFiles/glist.dir/code/browse.cpp.o.d"
   "CMakeFiles/glist.dir/code/catalog.cpp.o"
   "CMakeFiles/glist.dir/code/catalog.cpp.o.d"
   "CMakeFiles/glist.dir/code/coupon.cpp.o"

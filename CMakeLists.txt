@@ -6,7 +6,7 @@ add_subdirectory(googletest)
 
 ADD_EXECUTABLE(glist
     code/allergen.cpp
-    # code/browse.cpp
+    code/browse.cpp
     code/userProfile.cpp
     code/shoppingList.cpp
     code/food.cpp
@@ -19,7 +19,7 @@ ADD_EXECUTABLE(test
 test.cpp
 code/allergen.cpp
 code/allergen.cpp
-# code/browse.cpp
+code/browse.cpp
 code/userProfile.cpp
 code/shoppingList.cpp
 code/food.cpp

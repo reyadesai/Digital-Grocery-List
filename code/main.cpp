@@ -6,6 +6,7 @@
 #include "allergen.h"
 #include "login.h"
 #include "shoppingList.h"
+#include"browse.h"
 using namespace std;
 
 int main() {
@@ -16,6 +17,7 @@ int main() {
     Coupon Special("Special", 50);
     Gency.addCoupon(Special);
     login test;
+    string listName;
 
     cout << "Welcome to the Grocery Shopping App!" << endl << endl;
 
@@ -57,7 +59,7 @@ int option;
     
 
 string whiteName;
-string listName;
+
 cout << "Enter Name of List: "; 
 getline(cin, whiteName);
 cout << endl;
@@ -65,11 +67,6 @@ getline(cin, listName);
 ShoppingList testList(listName);
 cout << "Catalog: " << endl;
 cout << "---------" << endl;
-
-for(unsigned i = 0; i < 32; i++) {
-    cout << i << ". " << testBase[i].getName() << endl;
-}
-cout << endl;
 
 ShoppingList TestList;
 int input;
@@ -86,10 +83,9 @@ do {
     cin >> input;
     cout << endl;
     if(input == 1) {
-        for(unsigned i = 0; i < 32; i++) {
-        cout << i << ". " << testBase[i].getName() << endl;
-        }
-    cout << endl;
+        Browse dataBase;
+        dataBase.showCatalog();
+        cout << endl;
     }
     // Inside the loop where you add items to the shopping list (in main.cpp)
     if(input == 2) {
@@ -118,6 +114,7 @@ do {
 int basePrice = TestList.calculateTotalPrice();
 double tax = TestList.calculateTotalPrice() * .08;
 double disc = TestList.applyCoupons(Gency.getCoupons());
+cout << listName << " Checkout" << endl;
 cout << "Disc: " << disc << endl;
 cout << "Total: " << basePrice << " + " << tax << " = " << basePrice - (basePrice * disc/100) + tax << endl;
 delete[] testBase;

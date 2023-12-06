@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/path/to/googletest/include
+CXX_INCLUDES = 
 
-CXX_FLAGS = --coverage -std=gnu++2a
+CXX_FLAGS = 
 

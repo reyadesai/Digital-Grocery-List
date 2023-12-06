@@ -138,4 +138,5 @@ void Browse::showCatalog(){
             break; 
         }
     }
+    delete[] dataBase;
 }
