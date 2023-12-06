@@ -34,10 +34,7 @@ class Food {
         int getQTY() const;
         //return price
         double getPrice() const;
-        //changes QTY formula: qty = qty - change
-        //need to add safeguards: can't input negative value
-        void reduceQTY(int change);
-        void setPrice(double newPrice);
+
         friend ostream& operator<<(std::ostream& os, const Food& food);
 };
 

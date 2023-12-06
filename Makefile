@@ -406,7 +406,6 @@ code/main.o: code/main.cpp.o
 
 # target to build an object file
 code/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/code/main.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/main.cpp.o
 .PHONY : code/main.cpp.o
 
@@ -415,7 +414,6 @@ code/main.i: code/main.cpp.i
 
 # target to preprocess a source file
 code/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/code/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/main.cpp.i
 .PHONY : code/main.cpp.i
 
@@ -424,7 +422,6 @@ code/main.s: code/main.cpp.s
 
 # target to generate assembly for a file
 code/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/code/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/glist.dir/build.make CMakeFiles/glist.dir/code/main.cpp.s
 .PHONY : code/main.cpp.s
 
