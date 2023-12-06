@@ -59,7 +59,11 @@ The UML diagram represents how different classes interact with each other in our
 
 ><img width="355" alt="7" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/4e4deeb6-f659-429c-813d-6948a7260c2a">
  ## Installation/Usage
- > Instructions on installing and running your application
+ > 1. Clone Repository
+>  2. Enter correct directory (cd <name of folder>)
+>  3. Run cmake . and make
+>  4. To compile main, run the command ./bin/test
+>  5. Login with "Gency" and follow the code from there
  ## Testing
  > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
  
