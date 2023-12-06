@@ -52,15 +52,7 @@ double Food::getPrice() const {
     return price;
 }
 
-//changes QTY formula: qty = qty - change
-//need to add safeguards: can't input negative value
-void Food::reduceQTY(int change) {
-    cout << "work on reduceqty: " << change << endl;
-}
 
-void Food:: setPrice(double newPrice){
-    price = newPrice;
-}
 
 ostream& operator<<(std::ostream& os, const Food& food) {
     os << "Name: " << food.name << ", Type: " << food.type << ", ID: " << food.id << ", QTY: " << food.qty << ", Price: " << food.price;

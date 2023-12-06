@@ -16,7 +16,6 @@ public:
     bool removeItem(const string& itemName);
     void displayItems() const;
     double calculateTotalPrice() const;
-    static vector<string> getSavedShoppingLists(); // Static function to get saved shopping lists
     void addToShoppingList(UserProfile );
     void removeFromShoppingList();
     void displayShoppingList();

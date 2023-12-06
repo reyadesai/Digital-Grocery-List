@@ -205,4 +205,11 @@ CMakeFiles/test.dir/test.cpp.o: \
  /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h \
  /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
  /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.h \
- /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/browse.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/login.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.h \
+ /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.h

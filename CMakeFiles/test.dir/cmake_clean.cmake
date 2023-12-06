@@ -11,8 +11,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/test.dir/code/food.cpp.o.d"
   "CMakeFiles/test.dir/code/login.cpp.o"
   "CMakeFiles/test.dir/code/login.cpp.o.d"
-  "CMakeFiles/test.dir/code/main.cpp.o"
-  "CMakeFiles/test.dir/code/main.cpp.o.d"
   "CMakeFiles/test.dir/code/shoppingList.cpp.o"
   "CMakeFiles/test.dir/code/shoppingList.cpp.o.d"
   "CMakeFiles/test.dir/code/userProfile.cpp.o"
