@@ -69,10 +69,24 @@ include CMakeFiles/glist.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/glist.dir/flags.make
 
+CMakeFiles/glist.dir/code/main.cpp.o: CMakeFiles/glist.dir/flags.make
+CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp
+CMakeFiles/glist.dir/code/main.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/glist.dir/code/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/main.cpp.o -MF CMakeFiles/glist.dir/code/main.cpp.o.d -o CMakeFiles/glist.dir/code/main.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp
+
+CMakeFiles/glist.dir/code/main.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glist.dir/code/main.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp > CMakeFiles/glist.dir/code/main.cpp.i
+
+CMakeFiles/glist.dir/code/main.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glist.dir/code/main.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp -o CMakeFiles/glist.dir/code/main.cpp.s
+
 CMakeFiles/glist.dir/code/allergen.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/allergen.cpp.o: code/allergen.cpp
 CMakeFiles/glist.dir/code/allergen.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/glist.dir/code/allergen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/glist.dir/code/allergen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/allergen.cpp.o -MF CMakeFiles/glist.dir/code/allergen.cpp.o.d -o CMakeFiles/glist.dir/code/allergen.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/allergen.cpp
 
 CMakeFiles/glist.dir/code/allergen.cpp.i: cmake_force
@@ -86,7 +100,7 @@ CMakeFiles/glist.dir/code/allergen.cpp.s: cmake_force
 CMakeFiles/glist.dir/code/userProfile.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/userProfile.cpp.o: code/userProfile.cpp
 CMakeFiles/glist.dir/code/userProfile.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/glist.dir/code/userProfile.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/glist.dir/code/userProfile.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/userProfile.cpp.o -MF CMakeFiles/glist.dir/code/userProfile.cpp.o.d -o CMakeFiles/glist.dir/code/userProfile.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/userProfile.cpp
 
 CMakeFiles/glist.dir/code/userProfile.cpp.i: cmake_force
@@ -100,7 +114,7 @@ CMakeFiles/glist.dir/code/userProfile.cpp.s: cmake_force
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp
 CMakeFiles/glist.dir/code/shoppingList.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/glist.dir/code/shoppingList.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/glist.dir/code/shoppingList.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/shoppingList.cpp.o -MF CMakeFiles/glist.dir/code/shoppingList.cpp.o.d -o CMakeFiles/glist.dir/code/shoppingList.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/shoppingList.cpp
 
 CMakeFiles/glist.dir/code/shoppingList.cpp.i: cmake_force
@@ -114,7 +128,7 @@ CMakeFiles/glist.dir/code/shoppingList.cpp.s: cmake_force
 CMakeFiles/glist.dir/code/food.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/food.cpp.o: code/food.cpp
 CMakeFiles/glist.dir/code/food.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/glist.dir/code/food.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/glist.dir/code/food.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/food.cpp.o -MF CMakeFiles/glist.dir/code/food.cpp.o.d -o CMakeFiles/glist.dir/code/food.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp
 
 CMakeFiles/glist.dir/code/food.cpp.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/glist.dir/code/food.cpp.s: cmake_force
 CMakeFiles/glist.dir/code/coupon.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/coupon.cpp.o: code/coupon.cpp
 CMakeFiles/glist.dir/code/coupon.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/glist.dir/code/coupon.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/glist.dir/code/coupon.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/coupon.cpp.o -MF CMakeFiles/glist.dir/code/coupon.cpp.o.d -o CMakeFiles/glist.dir/code/coupon.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/coupon.cpp
 
 CMakeFiles/glist.dir/code/coupon.cpp.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/glist.dir/code/coupon.cpp.s: cmake_force
 CMakeFiles/glist.dir/code/catalog.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/catalog.cpp.o: code/catalog.cpp
 CMakeFiles/glist.dir/code/catalog.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/glist.dir/code/catalog.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/glist.dir/code/catalog.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/catalog.cpp.o -MF CMakeFiles/glist.dir/code/catalog.cpp.o.d -o CMakeFiles/glist.dir/code/catalog.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.cpp
 
 CMakeFiles/glist.dir/code/catalog.cpp.i: cmake_force
@@ -152,20 +166,6 @@ CMakeFiles/glist.dir/code/catalog.cpp.i: cmake_force
 CMakeFiles/glist.dir/code/catalog.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glist.dir/code/catalog.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/catalog.cpp -o CMakeFiles/glist.dir/code/catalog.cpp.s
-
-CMakeFiles/glist.dir/code/main.cpp.o: CMakeFiles/glist.dir/flags.make
-CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp
-CMakeFiles/glist.dir/code/main.cpp.o: CMakeFiles/glist.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/glist.dir/code/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/glist.dir/code/main.cpp.o -MF CMakeFiles/glist.dir/code/main.cpp.o.d -o CMakeFiles/glist.dir/code/main.cpp.o -c /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp
-
-CMakeFiles/glist.dir/code/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/glist.dir/code/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp > CMakeFiles/glist.dir/code/main.cpp.i
-
-CMakeFiles/glist.dir/code/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/glist.dir/code/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/main.cpp -o CMakeFiles/glist.dir/code/main.cpp.s
 
 CMakeFiles/glist.dir/code/login.cpp.o: CMakeFiles/glist.dir/flags.make
 CMakeFiles/glist.dir/code/login.cpp.o: code/login.cpp
@@ -183,25 +183,25 @@ CMakeFiles/glist.dir/code/login.cpp.s: cmake_force
 
 # Object files for target glist
 glist_OBJECTS = \
+"CMakeFiles/glist.dir/code/main.cpp.o" \
 "CMakeFiles/glist.dir/code/allergen.cpp.o" \
 "CMakeFiles/glist.dir/code/userProfile.cpp.o" \
 "CMakeFiles/glist.dir/code/shoppingList.cpp.o" \
 "CMakeFiles/glist.dir/code/food.cpp.o" \
 "CMakeFiles/glist.dir/code/coupon.cpp.o" \
 "CMakeFiles/glist.dir/code/catalog.cpp.o" \
-"CMakeFiles/glist.dir/code/main.cpp.o" \
 "CMakeFiles/glist.dir/code/login.cpp.o"
 
 # External object files for target glist
 glist_EXTERNAL_OBJECTS =
 
+bin/glist: CMakeFiles/glist.dir/code/main.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/allergen.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/userProfile.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/shoppingList.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/food.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/coupon.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/catalog.cpp.o
-bin/glist: CMakeFiles/glist.dir/code/main.cpp.o
 bin/glist: CMakeFiles/glist.dir/code/login.cpp.o
 bin/glist: CMakeFiles/glist.dir/build.make
 bin/glist: CMakeFiles/glist.dir/link.txt

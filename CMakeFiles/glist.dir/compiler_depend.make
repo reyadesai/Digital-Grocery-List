@@ -113,6 +113,10 @@ CMakeFiles/glist.dir/code/allergen.cpp.o: code/allergen.cpp \
   /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -142,7 +146,6 @@ CMakeFiles/glist.dir/code/allergen.cpp.o: code/allergen.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc
 
 CMakeFiles/glist.dir/code/catalog.cpp.o: code/catalog.cpp \
@@ -261,6 +264,10 @@ CMakeFiles/glist.dir/code/catalog.cpp.o: code/catalog.cpp \
   /usr/include/c++/8/bits/basic_string.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -290,7 +297,6 @@ CMakeFiles/glist.dir/code/catalog.cpp.o: code/catalog.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/bits/locale_classes.tcc \
   /usr/include/c++/8/system_error \
@@ -426,6 +432,10 @@ CMakeFiles/glist.dir/code/coupon.cpp.o: code/coupon.cpp \
   /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -455,7 +465,6 @@ CMakeFiles/glist.dir/code/coupon.cpp.o: code/coupon.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc
 
 CMakeFiles/glist.dir/code/food.cpp.o: code/food.cpp \
@@ -574,6 +583,10 @@ CMakeFiles/glist.dir/code/food.cpp.o: code/food.cpp \
   /usr/include/c++/8/bits/basic_string.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -603,7 +616,6 @@ CMakeFiles/glist.dir/code/food.cpp.o: code/food.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/bits/locale_classes.tcc \
   /usr/include/c++/8/system_error \
@@ -742,6 +754,10 @@ CMakeFiles/glist.dir/code/login.cpp.o: code/login.cpp \
   /usr/include/c++/8/bits/basic_string.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -771,7 +787,6 @@ CMakeFiles/glist.dir/code/login.cpp.o: code/login.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/bits/locale_classes.tcc \
   /usr/include/c++/8/system_error \
@@ -910,6 +925,10 @@ CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp \
   /usr/include/c++/8/bits/basic_string.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -939,7 +958,6 @@ CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/bits/locale_classes.tcc \
   /usr/include/c++/8/system_error \
@@ -966,6 +984,8 @@ CMakeFiles/glist.dir/code/main.cpp.o: code/main.cpp \
   /usr/include/c++/8/vector \
   /usr/include/c++/8/bits/stl_construct.h \
   /usr/include/c++/8/bits/stl_uninitialized.h \
+  /usr/include/c++/8/utility \
+  /usr/include/c++/8/bits/stl_relops.h \
   /usr/include/c++/8/bits/stl_vector.h \
   /usr/include/c++/8/bits/stl_bvector.h \
   /usr/include/c++/8/bits/vector.tcc \
@@ -1087,6 +1107,10 @@ CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp \
   /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -1116,11 +1140,12 @@ CMakeFiles/glist.dir/code/shoppingList.cpp.o: code/shoppingList.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/vector \
   /usr/include/c++/8/bits/stl_construct.h \
   /usr/include/c++/8/bits/stl_uninitialized.h \
+  /usr/include/c++/8/utility \
+  /usr/include/c++/8/bits/stl_relops.h \
   /usr/include/c++/8/bits/stl_vector.h \
   /usr/include/c++/8/bits/stl_bvector.h \
   /usr/include/c++/8/bits/vector.tcc \
@@ -1270,6 +1295,10 @@ CMakeFiles/glist.dir/code/userProfile.cpp.o: code/userProfile.cpp \
   /usr/include/c++/8/x86_64-redhat-linux/bits/atomic_word.h \
   /usr/include/c++/8/ext/alloc_traits.h \
   /usr/include/c++/8/bits/alloc_traits.h \
+  /usr/include/c++/8/string_view \
+  /usr/include/c++/8/limits \
+  /usr/include/c++/8/bits/functional_hash.h \
+  /usr/include/c++/8/bits/string_view.tcc \
   /usr/include/c++/8/ext/string_conversions.h \
   /usr/include/c++/8/cstdlib \
   /usr/include/stdlib.h \
@@ -1299,11 +1328,12 @@ CMakeFiles/glist.dir/code/userProfile.cpp.o: code/userProfile.cpp \
   /usr/include/asm-generic/errno.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/bits/types/error_t.h \
-  /usr/include/c++/8/bits/functional_hash.h \
   /usr/include/c++/8/bits/basic_string.tcc \
   /usr/include/c++/8/vector \
   /usr/include/c++/8/bits/stl_construct.h \
   /usr/include/c++/8/bits/stl_uninitialized.h \
+  /usr/include/c++/8/utility \
+  /usr/include/c++/8/bits/stl_relops.h \
   /usr/include/c++/8/bits/stl_vector.h \
   /usr/include/c++/8/bits/stl_bvector.h \
   /usr/include/c++/8/bits/vector.tcc \
@@ -1347,6 +1377,8 @@ code/shoppingList.cpp:
 
 /usr/include/c++/8/bits/vector.tcc:
 
+/usr/include/c++/8/bits/stl_relops.h:
+
 /usr/include/c++/8/bits/stl_uninitialized.h:
 
 /usr/include/c++/8/vector:
@@ -1367,6 +1399,10 @@ code/food.h:
 
 /usr/include/c++/8/istream:
 
+/usr/include/c++/8/bits/ostream.tcc:
+
+/usr/include/c++/8/bits/basic_ios.tcc:
+
 /usr/include/c++/8/bits/stl_construct.h:
 
 /usr/include/bits/endian.h:
@@ -1374,6 +1410,8 @@ code/food.h:
 /usr/include/bits/types/struct_itimerspec.h:
 
 /usr/include/c++/8/bits/codecvt.h:
+
+/usr/include/c++/8/utility:
 
 /usr/include/bits/locale.h:
 
@@ -1499,6 +1537,8 @@ code/shoppingList.h:
 
 /usr/include/stdc-predef.h:
 
+/usr/include/c++/8/limits:
+
 /usr/include/c++/8/bits/basic_string.tcc:
 
 code/allergen.h:
@@ -1521,13 +1561,9 @@ code/allergen.h:
 
 /usr/include/c++/8/ostream:
 
-/usr/include/c++/8/bits/basic_ios.tcc:
-
 /usr/include/c++/8/bits/streambuf.tcc:
 
 /usr/include/c++/8/bits/hash_bytes.h:
-
-/usr/include/c++/8/typeinfo:
 
 /usr/include/c++/8/bits/cpp_type_traits.h:
 
@@ -1611,6 +1647,10 @@ code/userProfile.cpp:
 
 /usr/include/sched.h:
 
+/usr/include/c++/8/typeinfo:
+
+/usr/include/c++/8/bits/string_view.tcc:
+
 /usr/include/bits/types/time_t.h:
 
 /usr/include/bits/types/struct_timespec.h:
@@ -1648,6 +1688,10 @@ code/userProfile.cpp:
 /usr/include/bits/setjmp.h:
 
 /usr/include/c++/8/bits/streambuf_iterator.h:
+
+/usr/include/c++/8/string_view:
+
+/usr/include/c++/8/bits/functional_hash.h:
 
 /usr/include/c++/8/fstream:
 
@@ -1699,8 +1743,6 @@ code/login.cpp:
 
 /usr/include/bits/types/error_t.h:
 
-/usr/include/c++/8/bits/functional_hash.h:
-
 /usr/include/c++/8/x86_64-redhat-linux/bits/cpu_defines.h:
 
 /usr/include/c++/8/bits/ios_base.h:
@@ -1718,5 +1760,3 @@ code/login.cpp:
 /usr/include/c++/8/cwctype:
 
 /usr/include/c++/8/x86_64-redhat-linux/bits/ctype_base.h:
-
-/usr/include/c++/8/bits/ostream.tcc:

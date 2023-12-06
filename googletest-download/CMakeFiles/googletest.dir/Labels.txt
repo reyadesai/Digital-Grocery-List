@@ -1,0 +1,14 @@
+# Target labels
+ googletest
+# Source files and their labels
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/CMakeFiles/googletest
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/CMakeFiles/googletest.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/CMakeFiles/googletest-complete.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-build.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-configure.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-download.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-install.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-mkdir.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-patch.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-test.rule
+/data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/googletest-download/googletest-prefix/src/googletest-stamp/googletest-update.rule

@@ -12,19 +12,20 @@ public:
 
     std::string getName() const;
     void setName(const std::string& name);
-
+    
+    void showCoupons();
     void addCoupon(const Coupon& coupon);
-    void removeCoupon(const Coupon& coupon);
     std::vector<Coupon> getCoupons() const;
-
+    void removeCoupon(const Coupon& coupon);
+    
     // Allergen-related functions
     void addAllergen(const Allergen& allergen);
     void removeAllergen(const Allergen& allergen);
     std::vector<Allergen> getAllergens() const;
     void showAllergens();
+    
     void editAllergens();
-
-    void showCoupons();
+ 
     void editCoupons();
 
     

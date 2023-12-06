@@ -204,7 +204,6 @@ bin/test: CMakeFiles/test.dir/code/coupon.cpp.o
 bin/test: CMakeFiles/test.dir/code/catalog.cpp.o
 bin/test: CMakeFiles/test.dir/code/login.cpp.o
 bin/test: CMakeFiles/test.dir/build.make
-bin/test: lib/libgmock.a
 bin/test: lib/libgtest.a
 bin/test: lib/libgtest_main.a
 bin/test: lib/libgtest.a

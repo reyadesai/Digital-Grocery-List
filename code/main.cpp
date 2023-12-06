@@ -17,7 +17,7 @@ int main() {
     Coupon Special("Special", 50);
     Gency.addCoupon(Special);
     login test;
-    //cout << (Gency.getAllergens()).at(0).getName() << endl;
+
     
 /*
     0.
@@ -40,12 +40,7 @@ int main() {
         }
     } while(key != 0);
 
-/*
-    2.
-    Choose User Profile:
-    (user logins)
-    //unique coupons per profile
-*/
+
 int option;
     do {
         cout << "Options:" << endl;
@@ -74,47 +69,7 @@ int option;
 
     } while(option != 3);
     
-/*
-    3.
-    After Choosing leads to options:
-*/
-  
-/*
-    3.1
-    ->Allergens
-        -view[getter]
-        -edit[setter]
-*/
-/*
-    3.2
-    ->Coupons
-        -view[getter]
-        -edit[setter]
-*/
 
-/*
-    3.3
-    Goes into Confirm
-*/
-
-/*
-    4.
-    Select Store
-*/
-
-/*
-    5.
-    Based on store two options:
-    ->New List
-    ->Old List
-        -pasts List can be copied now
-        -adjusts list after(see new List)
-*/
-
-/*
-    6.
-    New List:
-*/
 string whiteName;
 string listName;
 cout << "Enter Name of List: "; 
@@ -129,14 +84,7 @@ for(unsigned i = 0; i < 32; i++) {
     cout << i << ". " << testBase[i].getName() << endl;
 }
 cout << endl;
-/*
-    6.1
-    Browse Catalog:
-    ->type
-        ->Alphabetically
-        ->Price
-        ->etc.
-*/
+
 ShoppingList TestList;
 int input;
 do {
@@ -181,66 +129,16 @@ do {
     }
 
 }while(input != 6);
-//TestList.applyCoupons(Gency.getCoupons()); // Apply user's coupons
+
 int basePrice = TestList.calculateTotalPrice();
 double tax = TestList.calculateTotalPrice() * .08;
 double disc = TestList.applyCoupons(Gency.getCoupons());
 cout << "Disc: " << disc << endl;
 cout << "Total: " << basePrice << " + " << tax << " = " << basePrice - (basePrice * disc/100) + tax << endl;
+delete[] testBase;
 return 0;
 }
-/*
-    6.2
-    Add from Catalog:
-        1. Select Item
-        2. Select Quantity
-        3. Select Confirm/Add
-            ->+ basket quantity
-            ->- store quantity
-            (Gives Allergen warning)
-*/
 
-/*
-    6.3 
-    Should be able to remove:
-        ->remove from basket
-            - + store quantity
-            - - basket quantity
-*/
-
-/*
-    7. 
-    Checkout:
-*/
-
-/*
-    7.1 Get Total
-        ->Taxes Include
-*/
-
-/*
-    7.2 Add Coupons
-        ->idk bout that yet
-*/
-
-
- // Display the catalog
-  /*
-    cout << "Catalog:" << endl;
-
-   
-  
-    // Clean up the allocated memory for the catalog
-    delete[] testBase;
-/*
-        7.3 Auto Saves List
-*/
-
-/*
-    8.
-    Back To New Lists and start all over
-    loop it and quit with q
-*/
 
 
 
