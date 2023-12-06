@@ -56,6 +56,10 @@ void UserProfile::showAllergens() {
 }
 
 void UserProfile::editAllergens() {
+    if (userAllergens.empty()) {
+        cout << "No allergens available to edit." << endl;
+    }
+    else {
     int choice;
 
     do{
@@ -99,11 +103,12 @@ void UserProfile::editAllergens() {
         }
             
     } while(choice != 3);
+    }
 }
 
 void UserProfile::showCoupons() {
     for(unsigned i = 0; i < userCoupons.size(); i++) {
-        cout << "Name: "<< (userCoupons.at(i)).getName() << "Discount: -" << (userCoupons.at(i)).getDiscount() << "%" << endl; 
+        cout << "Name: "<< (userCoupons.at(i)).getName() << " Discount: -" << (userCoupons.at(i)).getDiscount() << "%" << endl; 
     }
     cout << endl;
 }
@@ -111,7 +116,8 @@ void UserProfile::showCoupons() {
 void UserProfile::editCoupons() {
     if (userCoupons.empty()) {
         cout << "No coupons available to edit." << endl;
-    } else {
+    } 
+    else {
         int choice;
 
         do {

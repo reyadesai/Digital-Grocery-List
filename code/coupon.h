@@ -11,7 +11,7 @@ string getName() const;
 void setName(const string& name);
 double getDiscount() const;
 string getExpirationDate() const;
-//bool isApplicable(const std::vector<Food>& items) const;
+
 
 private:
 string name;
