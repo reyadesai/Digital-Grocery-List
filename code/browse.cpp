@@ -31,7 +31,7 @@ void Browse::showCatalog(){
         if(userInput ==1){
             cout<< "All items"<<endl;
             for(int i =0; i< arraySize; i++){
-                cout<< counter<<". "<< dataBase[i]<<endl;//
+                cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;//
                 counter++;
             }
         }
@@ -42,7 +42,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "meat"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;//change
+                    cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;//change
                     counter++;
                 }
                 else{
@@ -58,7 +58,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "vegetable"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;
                     counter++;
                     //foundVegetable = true;
                 }
@@ -75,7 +75,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "fruit"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;
                     counter++;
                 }
                 else{
@@ -90,7 +90,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "dairy"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;
                     counter++;
                 }
                 else{
@@ -105,7 +105,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "seasoning"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". "<< "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;
                     counter++;
                 }
                 else{
@@ -120,7 +120,7 @@ void Browse::showCatalog(){
             });
             for(int i =0; i< arraySize; i++){
                 if(dataBase[i]->getType()== "misc"){
-                    cout<< counter<<". "<< dataBase[i]<<endl;
+                    cout<< counter<<". " << "Name: " << dataBase[i]->getName() << ", Type: " << dataBase[i]->getType() << ", ID: " << dataBase[i]->getID() << ", QTY: " << dataBase[i]->getQTY() << ", Price: " << dataBase[i]->getPrice()<<endl;
                     counter++;
                 }
                 else{
@@ -144,5 +144,8 @@ void Browse::showCatalog(){
             break; 
         }
     }
-    delete[] dataBase;
+    for (unsigned i = 0; i < 33; i++) {
+        delete dataBase[i];
+    }
+    
 }
