@@ -10,7 +10,6 @@
 using namespace std;
 
 int main() {
-    Food* testBase = catalog::generateCatalog();
     UserProfile Gency("Gency");
     Allergen Beef("beef");
     Gency.addAllergen(Beef);
@@ -117,7 +116,6 @@ double disc = TestList.applyCoupons(Gency.getCoupons());
 cout << listName << " Checkout" << endl;
 cout << "Disc: " << disc << endl;
 cout << "Total: " << basePrice << " + " << tax << " = " << basePrice - (basePrice * disc/100) + tax << endl;
-delete[] testBase;
 return 0;
 }
 

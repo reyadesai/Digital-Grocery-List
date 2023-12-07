@@ -5,7 +5,7 @@
 
 class catalog {
 public:
-    static Food* generateCatalog();
+    void generateCatalog(Food*[]);
 
 };
 

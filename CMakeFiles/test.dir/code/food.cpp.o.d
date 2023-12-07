@@ -1,5 +1,5 @@
 CMakeFiles/test.dir/code/food.cpp.o: \
- /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp \
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/8/iostream \
  /usr/include/c++/8/x86_64-redhat-linux/bits/c++config.h \
  /usr/include/bits/wordsize.h \
@@ -111,4 +111,4 @@ CMakeFiles/test.dir/code/food.cpp.o: \
  /usr/include/c++/8/bits/basic_ios.tcc \
  /usr/include/c++/8/bits/ostream.tcc /usr/include/c++/8/istream \
  /usr/include/c++/8/bits/istream.tcc \
- /data/class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h
+ /class/classes/bhuyn053/final-project-ssuva003-rdesa022-bhyun053-kalva088/code/food.h
