@@ -37,8 +37,6 @@ The UML diagram represents how different classes interact with each other in our
 
  
  > ## Final deliverable
- > Before the demo, you should do the following:
- > * Plan one more sprint (that you will not necessarily complete before the end of the quarter). Your In-progress and In-testing columns should be empty (you are not doing more work currently) but your TODO column should have a full sprint plan in it as you have done before. This should include any known bugs (there should be some) or new features you would like to add. These should appear as issues/cards on your Project board.
  
  ## Screenshots
 <img width="918" alt="screen layout 1" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/e3845490-1139-41ae-a3cd-48f2e62a69f0">
