@@ -64,5 +64,8 @@ The UML diagram represents how different classes interact with each other in our
 >  4. To compile main, run the command ./bin/test
 >  5. Login with "Gency" and follow the code from there
  ## Testing
- > How was your project tested/validated? If you used CI, you should have a "build passing" badge in this README.
+ The first test ran was valgrind using the command valgrind ./bin/glist.
+ ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/73f9d1c4-21f3-49e9-9c95-4b03ed333e06)
+ The second would be series of units tests that cover every function the the code.
+
  
