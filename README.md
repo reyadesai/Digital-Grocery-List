@@ -66,15 +66,17 @@ The UML diagram represents how different classes interact with each other in our
  ## Testing
  The first test ran was valgrind using the command valgrind ./bin/glist.
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/73f9d1c4-21f3-49e9-9c95-4b03ed333e06)
+ 
  The second would be series of units tests that cover every function the the code.
  The command to run the tests is ./bin/test.
+ 
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/4691b6e5-1251-40ab-8032-0e342b346a5f)
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/1aa3b75b-fc9b-4a00-8987-350b756d6728)
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/616d285d-8ae6-4ab0-9859-bdad599b9d56)
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/ead0902a-d0f6-4991-b7d3-a5b7eedddcf0)
  ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/2f06d38b-bef3-4c4e-a574-0f919388fbd4)
 
-
+The third test we used was just running the code as using every function as if it were in an alpha or beta testing phase with multiple users, exactly like how the demo will go.
 
 
 
