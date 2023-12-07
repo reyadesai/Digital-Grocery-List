@@ -35,7 +35,6 @@ class Food {
         //return price
         double getPrice() const;
 
-        friend ostream& operator<<(std::ostream& os, const Food& food);
 };
 
 #endif
