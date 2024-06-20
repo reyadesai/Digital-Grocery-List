@@ -16,21 +16,24 @@ We will also use a shopping cart feature that allows users to add items from the
 
 ### Navigation Diagram
 
-<img width="903" alt="PNG image" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/145e2e3e-4b3d-4108-a0ad-55cff1faa256">
+<img width="828" alt="1" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/639e8bdb-a1b0-4530-b023-5fca2dba330f">
+
 
 The Navigation Diagram shows how the user interacts with their profile to edit grocery lists, allergens, coupons, or view old lists. First, the user will be asked to choose a profile, along with showing allergies/coupons associated with that specific user. Then, they can choose from a list of stores they have to access an older list or create a new one. After the user edits/creates their list, they will view the total list at checkout, including the prices, location of items in store, and quantities. Lastly, the user can exit. 
 
 ### Screen Layouts
 
+<img width="366" alt="2" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/45181d1e-de00-4cc1-bbd7-aba68cf6accf">
 
-<img width="376" alt="Screenshot 2023-12-06 at 8 07 25 PM" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/7c38aa29-ff3b-464a-b528-0e9548efd9ee">
-<img width="601" alt="Screenshot 2023-12-06 at 8 07 32 PM" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/fb7f309f-0c9c-4fed-9ea9-5194fd022b14">
+<img width="601" alt="3" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/6511469f-6ae7-4106-ac40-d7d61b23efc0">
+
 
 The program begins with prompting the user to eneter a username, where they will not be able to proceed until they enter the correct username, or select "!" to quit the program. Once they successfuly login, the user will be presented with four options, which inlcude manage allergens, manage coupons, next, or return to main menu. Firstly, manage allergens will allow the user to add a new allergen and remove an allergen. Once done managing, the user will be allowed to return to the main menu. Similarly, manage coupons will allow the user to add a new coupon, remove a coupon and even edit a previously added coupon by changing the percent off. Once again, the user will be allowed to return to the main menu once done managing coupons. Once returning to the main menu, the user can choose to proceed or quit. If they choose to proceed, they will first be prompted to name their new list. Upon naming the list, they will see the whole catalog, which is the list of items available to purchase. Then, the user will be able to browse the catalog, add to basket, remove from basket, edit quantity of item, view entire basket, checkout or quit. Browse catalog shows the items and the user has the option to view all items or by different categories such as meats, vegetables, fruit, dairy, seasoning and miscellaneous. Then add to basket allows the user to enter an item they want to purchase, where they enter the name, quantity and price of the item aand if they enter an item that matches one of the user's allergens, the program will output a warning. Next, remove item simply removes the whole item the user enters from the list. Next, edit quantity allows the user to increase or decrease the amount of a certain item they intend to purchase. Following, view basket allows the user to view all the items they have entered to purchase. Then the user can either checkout, where they will see their total amount, including tax and the coupons applied. Lastly, during any step of the program, the user can select "7" to quit the program. 
 
 
 ## Class Diagram
-<img width="596" alt="Screenshot 2023-12-05 at 9 40 07 PM" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/e0e22b8b-d595-47be-9b89-48f990d52466">
+
+<img width="593" alt="4" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/7d04228e-2f22-42c6-9cca-2f4b1068ba79">
 
 The UML diagram represents how different classes interact with each other in our program and each of our classes has one responsibility. Firstly, the shoppingList class allows the user to add, remove, display and edit items as well as calculating total prices. Next, the food class is responsible for handling all of the products, such as reducing the quantity of the items, setting the price, getting the name, type, ID, etc. The catalog and browse class are connected to the food class as the user will be able to view the items from the food class in the catalog. Next, the userProfile class is for different users who use the program. This sets the user's name and displays specific coupons and allergens for that person. This class also is related to the allergens and coupons class where the allergens and coupons are set. Lastly, the login class is what saves the username to access the program. 
 
@@ -39,22 +42,17 @@ The UML diagram represents how different classes interact with each other in our
  > ## Final deliverable
  
  ## Screenshots
-<img width="918" alt="screen layout 1" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/e3845490-1139-41ae-a3cd-48f2e62a69f0">
-<img width="866" alt="screen layout 2" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/b9400b3b-33f4-4d97-811b-8bc9c1e49f3f">
-<img width="322" alt="next" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/9d14e43e-754c-4e77-9733-dee2802c1998">
+<img width="823" alt="5" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/e82cec55-df2e-4953-8a42-a4e4b07796b5">
+<img width="830" alt="6" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/7f6bb062-4616-45f2-9dab-d244e67d009f">
+<img width="321" alt="7" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/ad77a311-df42-4771-8998-0c7de4727932">
+<img width="828" alt="8" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/f0e9454a-24c6-4133-8ebd-d489406eaa40">
+<img width="831" alt="9" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/8ebef64c-7b76-4186-9a8d-dc62c112bc53">
+<img width="740" alt="10" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/230e589a-1534-41e0-84bc-da7a7bbbcf32">
+<img width="676" alt="11" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/83058fcf-eee9-45e3-82ca-1bed1d8e5468">
+<img width="446" alt="12" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/23cd36ec-f9cf-42fb-b49a-ad5bb3f6d5cc">
+<img width="627" alt="13" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/731b8997-2544-4f1b-941a-2f1f4b54b488">
+<img width="359" alt="14" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/22aab0ed-4b65-4d16-9650-9bd7bdf92332">
 
-<img width="1063" alt="browse 1" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/605f7722-e2ab-4991-856a-e821d5f0fd03">
-<img width="851" alt="browse 2" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/7af0f0b0-9f3f-45da-a205-f990939f200e">
-
-<img width="742" alt="browse 3" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/db0b4bb9-4ed3-4080-807f-cc7c870ac7f6">
-
-
-<img width="672" alt="5" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/e433e2f8-3185-412c-889f-4d5985964c7a">
-<img width="448" alt="5 1" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/49aaa2e4-02e5-478c-a172-5725393b703e">
-
-<img width="631" alt="6" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/0c6669ad-2a43-4db4-80a7-324ac3ad36b9">
-
-><img width="355" alt="7" src="https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/146493032/4e4deeb6-f659-429c-813d-6948a7260c2a">
  ## Installation/Usage
  > 1. Clone Repository
 >  2. Enter correct directory (cd <name of folder>)
@@ -63,20 +61,22 @@ The UML diagram represents how different classes interact with each other in our
 >  5. Login with "Gency" and follow the code from there
  ## Testing
  The first test ran was valgrind using the command valgrind ./bin/glist.
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/73f9d1c4-21f3-49e9-9c95-4b03ed333e06)
+<img width="832" alt="15" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/962d6061-6e72-4236-b243-0225f059b3c2">
+
  
  The second would be series of units tests that cover every function the the code.
  The command to run the tests is ./bin/test.
- 
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/4691b6e5-1251-40ab-8032-0e342b346a5f)
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/1aa3b75b-fc9b-4a00-8987-350b756d6728)
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/616d285d-8ae6-4ab0-9859-bdad599b9d56)
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/ead0902a-d0f6-4991-b7d3-a5b7eedddcf0)
- ![image](https://github.com/cs100/final-project-ssuva003-rdesa022-bhyun053-kalva088/assets/127697174/2f06d38b-bef3-4c4e-a574-0f919388fbd4)
+ <img width="831" alt="16" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/f74d1327-40b6-4583-a27b-6743e00b366d">
+
+<img width="828" alt="17" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/8bed20f9-8f86-4b76-ada2-f4dacef7652d">
+
 
 The third test we used was just running the code as using every function as if it were in an alpha or beta testing phase with multiple users, exactly like how the demo will go.
 
+<img width="828" alt="18" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/b41a14ed-a6f0-4932-95fa-074cf7614492">
 
+<img width="824" alt="19" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/bfd29445-6291-4288-b793-0b61699f71e9">
+<img width="829" alt="20" src="https://github.com/reyadesai/Digital-Grocery-List/assets/146493032/1a425c40-0949-4714-ba96-906247c1900e">
 
 
  
